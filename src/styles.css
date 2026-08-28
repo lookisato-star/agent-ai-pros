@@ -6,8 +6,8 @@
 
 /*
  * Design system — consultant IA freelance.
- * Palette: fond bleu clair (#C7E0EB), olive (#B2BD7E) / olive clair (#C9D19D) / olive foncé (#8F9A5F)
- * CTA violet profond (#462255), texte #231A2B, neutre chaud #F5F3EC.
+ * Fond #FAF8F5, sections secondaires #F1ECEF, texte #211A24, texte secondaire #6F6672.
+ * CTA violet profond #462255, CTA hover #32183D.
  */
 
 @theme inline {
