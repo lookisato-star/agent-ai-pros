@@ -192,7 +192,7 @@ function Index() {
               <div className="mt-9">
                 <Cta />
               </div>
-              <p className="mt-4 text-sm text-foreground/70">
+              <p className="mt-4 text-sm text-muted-foreground">
                 45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
@@ -216,7 +216,7 @@ function Index() {
                       aria-hidden="true"
                     />
                     <h3 className="text-2xl leading-tight">{p.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-foreground/80">{p.text}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -263,7 +263,7 @@ function Index() {
                       aria-hidden="true"
                     />
                     <h3 className="text-2xl leading-tight">{s.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-foreground/80">{s.text}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -287,9 +287,9 @@ function Index() {
               {transformation.map((row, i) => (
                 <Reveal key={row.avant[0]} delay={i * 80}>
                   <div className="grid grid-cols-2 border-t border-foreground/10">
-                    <div className="px-5 py-5 text-sm leading-relaxed text-foreground/75">
+                    <div className="px-5 py-5 text-sm leading-relaxed text-muted-foreground">
                       <i
-                        className="fa-solid fa-xmark mr-2 text-foreground/40"
+                        className="fa-solid fa-xmark mr-2 text-muted-foreground/60"
                         aria-hidden="true"
                       />
                       <strong className="font-semibold">{row.avant[0]}</strong>
@@ -319,7 +319,7 @@ function Index() {
                   <div className="h-full rounded-xl border border-foreground/15 p-6">
                     <span className="font-display text-4xl text-primary">{e.n}</span>
                     <h3 className="mt-3 text-2xl leading-tight">{e.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-foreground/80">{e.text}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -336,15 +336,15 @@ function Index() {
                     <dl className="mt-5 space-y-4 text-sm leading-relaxed">
                       <div>
                         <dt className="font-semibold">Défi</dt>
-                        <dd className="text-foreground/80">{c.defi}</dd>
+                        <dd className="text-muted-foreground">{c.defi}</dd>
                       </div>
                       <div>
                         <dt className="font-semibold">Solution</dt>
-                        <dd className="text-foreground/80">{c.solution}</dd>
+                        <dd className="text-muted-foreground">{c.solution}</dd>
                       </div>
                       <div>
                         <dt className="font-semibold text-primary">Impact</dt>
-                        <dd className="text-foreground/80">{c.impact}</dd>
+                        <dd className="text-muted-foreground">{c.impact}</dd>
                       </div>
                     </dl>
                   </div>
@@ -373,7 +373,7 @@ function Index() {
                     <AccordionTrigger className="text-left font-sans text-base font-medium normal-case tracking-normal">
                       {f.q}
                     </AccordionTrigger>
-                    <AccordionContent className="text-sm leading-relaxed text-foreground/80">
+                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
                       {f.a}
                     </AccordionContent>
                   </AccordionItem>
@@ -395,13 +395,13 @@ function Index() {
         </section>
       </main>
 
-      <footer className="bg-primary text-primary-foreground px-5 py-14">
+      <footer className="bg-secondary-bg px-5 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
             <p className="font-display text-3xl">Julien Marchand</p>
             <a
               href="mailto:contact@agents-ia.eu"
-              className="mt-1 inline-flex items-center gap-2 text-sm text-primary underline underline-offset-4"
+              className="mt-1 inline-flex items-center gap-2 text-sm text-muted-foreground underline underline-offset-4"
             >
               <i className="fa-regular fa-envelope" aria-hidden="true" />
               contact@agents-ia.eu
