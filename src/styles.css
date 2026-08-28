@@ -72,8 +72,8 @@
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FAF8F5;
-  --border: #211A24 / 12%;
-  --input: #211A24 / 20%;
+  --border: color-mix(in srgb, var(--foreground) 12%, transparent);
+  --input: color-mix(in srgb, var(--foreground) 20%, transparent);
   --ring: #462255;
 
   /* Legacy aliases kept for compatibility */
