@@ -48,12 +48,13 @@
 :root {
   --radius: 0.5rem;
 
+  --light-blue: #C7E0EB;
   --olive: oklch(0.79 0.062 118.5);
   --olive-light: oklch(0.845 0.055 116.5);
   --olive-dark: oklch(0.655 0.06 118);
   --cream: oklch(0.964 0.012 92);
 
-  --background: var(--olive);
+  --background: var(--light-blue);
   --foreground: oklch(0.222 0.038 316);
 
   --card: var(--cream);
