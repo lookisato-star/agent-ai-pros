@@ -1,24 +1,415 @@
 import { createFileRoute } from "@tanstack/react-router";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Reveal } from "@/components/Reveal";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const CTA_LABEL = "Réserver un audit gratuit";
+const CTA_HREF = "mailto:contact@agents-ia.eu?subject=Audit%20gratuit%20-%20agents%20IA";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Agents IA sur-mesure pour agences digitales | Audit gratuit" },
+      {
+        name: "description",
+        content:
+          "Consultant freelance en agents IA pour agences web, Ads et copywriting en Europe. Qualification de leads, reporting et onboarding automatisés. Audit gratuit.",
+      },
+      {
+        property: "og:title",
+        content: "Agents IA sur-mesure pour agences digitales | Audit gratuit",
+      },
+      {
+        property: "og:description",
+        content:
+          "J'implémente des agents IA sur-mesure qui prennent en charge la qualification de leads, le reporting client et l'onboarding.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
+function Cta({ small = false, className = "" }: { small?: boolean; className?: string }) {
+  return (
+    <a href={CTA_HREF} className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}>
+      {CTA_LABEL}
+      <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+    </a>
+  );
+}
+
+const problemes = [
+  {
+    icon: "fa-regular fa-clock",
+    title: "On est débordés, mais on n'ose pas prendre plus de clients",
+    text: "Chaque nouveau contrat ajoute des heures non facturables. La croissance devient un risque au lieu d'une opportunité.",
+  },
+  {
+    icon: "fa-regular fa-file-lines",
+    title: "Le reporting est fait à l'arrache en fin de mois",
+    text: "Des exports copiés-collés à la main, tard le soir. Le client le sent, et la valeur perçue en pâtit.",
+  },
+  {
+    icon: "fa-regular fa-user",
+    title: "On recrute, on forme pendant trois mois, et la personne part",
+    text: "Le savoir-faire repart avec elle. Vous recommencez à zéro, avec la même charge et un budget en moins.",
+  },
+];
+
+const solutions = [
+  {
+    icon: "fa-solid fa-magnifying-glass-chart",
+    title: "Prospection & qualification de leads",
+    text: "L'agent trie, enrichit et score chaque demande entrante selon vos critères, et transmet uniquement les leads qui méritent votre temps.",
+  },
+  {
+    icon: "fa-solid fa-chart-line",
+    title: "Reporting client automatisé",
+    text: "Les données Ads, SEO et CRM sont consolidées, commentées dans votre ton et livrées au client sans intervention manuelle.",
+  },
+  {
+    icon: "fa-solid fa-arrow-right-arrow-left",
+    title: "Onboarding client fluide",
+    text: "Collecte des accès, brief structuré, création des dossiers et relances : le démarrage passe de trois semaines à trois jours.",
+  },
+];
+
+const transformation = [
+  {
+    avant: ["Qualification", " des leads à la main, une par une"],
+    apres: ["Leads scorés", " automatiquement, seuls les meilleurs arrivent à vous"],
+  },
+  {
+    avant: ["Reporting", " reconstruit chaque fin de mois dans l'urgence"],
+    apres: ["Rapports", " générés et commentés en continu, prêts à envoyer"],
+  },
+  {
+    avant: ["Onboarding", " dépendant d'une seule personne clé"],
+    apres: ["Process", " documenté et exécuté par l'agent, sans point de rupture"],
+  },
+  {
+    avant: ["Croissance", " bloquée par la capacité de l'équipe"],
+    apres: ["Capacité", " élastique : plus de clients, même effectif"],
+  },
+];
+
+const etapes = [
+  {
+    n: "01",
+    title: "Audit gratuit",
+    text: "45 minutes pour cartographier vos tâches répétitives et identifier les deux ou trois plus rentables à automatiser.",
+  },
+  {
+    n: "02",
+    title: "Proposition sur-mesure",
+    text: "Un périmètre clair, un délai, un prix fixe. Aucun abonnement imposé, aucun outil générique.",
+  },
+  {
+    n: "03",
+    title: "Implémentation",
+    text: "Je construis l'agent dans votre stack existante et je le teste sur vos vrais dossiers avant mise en production.",
+  },
+  {
+    n: "04",
+    title: "Suivi",
+    text: "30 jours d'ajustements inclus, avec formation de votre équipe pour que l'agent reste entre vos mains.",
+  },
+];
+
+const cas = [
+  {
+    nom: "Big Chick",
+    defi: "Plus de 200 demandes entrantes par mois traitées manuellement par deux account managers.",
+    solution:
+      "Agent de qualification connecté au formulaire et au CRM, avec scoring sur budget, secteur et urgence.",
+    impact: "12 heures récupérées par semaine et un taux de rendez-vous qualifiés multiplié par deux.",
+  },
+  {
+    nom: "RMS International Group",
+    defi: "Reporting multi-pays reconstruit à la main pour 18 clients, cinq jours par mois.",
+    solution:
+      "Agent de consolidation Ads et analytics produisant un rapport commenté dans le ton de l'agence.",
+    impact: "Reporting livré en 48 h au lieu de 5 jours, sans embauche supplémentaire.",
+  },
+];
+
+const faq = [
+  {
+    q: "Vous travaillez avec quelles agences, dans quelle zone ?",
+    a: "J'accompagne des agences digitales européennes (web, Ads, copywriting), en français ou en anglais, à distance. La majorité de mes clients sont en France, Belgique, Suisse et Espagne.",
+  },
+  {
+    q: "Quels sont les délais d'implémentation ?",
+    a: "Un premier agent utile est généralement en production entre deux et quatre semaines après la proposition, selon la complexité de vos outils et la disponibilité des accès.",
+  },
+  {
+    q: "Faut-il changer nos outils existants ?",
+    a: "Non. Les agents se branchent sur ce que vous utilisez déjà : votre CRM, vos régies publicitaires, Slack, Notion, Google Workspace. L'objectif est d'enlever du travail, pas d'ajouter une migration.",
+  },
+  {
+    q: "Comment se passe la facturation ?",
+    a: "Prix fixe par projet, défini après l'audit gratuit. Pas d'abonnement obligatoire ni de facturation à l'heure : vous savez exactement ce que vous payez avant de commencer.",
+  },
+];
+
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-olive text-foreground">
+      <header className="sticky top-0 z-50 border-b border-foreground/10 bg-olive/90 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
+          <span className="font-display text-2xl sm:text-3xl">Julien Marchand</span>
+          <a href={CTA_HREF} className="cta-btn cta-btn-sm">
+            <span className="hidden sm:inline">{CTA_LABEL}</span>
+            <span className="sm:hidden">Audit gratuit</span>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        {/* Hero */}
+        <section className="px-5 py-20 sm:py-28">
+          <div className="mx-auto max-w-4xl text-center">
+            <Reveal>
+              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-foreground/15 px-4 py-1.5 text-xs font-medium tracking-wide uppercase">
+                <i className="fa-solid fa-bolt" aria-hidden="true" />
+                Agents IA sur-mesure pour agences digitales
+              </p>
+              <h1 className="text-5xl sm:text-6xl md:text-7xl">
+                Votre agence est débordée — mais recruter n'est pas la réponse.
+              </h1>
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed sm:text-lg">
+                Vous perdez des heures sur la qualification de leads, le reporting client et
+                l'onboarding — pendant que vos concurrents automatisent déjà. J'implémente des
+                agents IA sur-mesure qui prennent en charge ces tâches, pour que votre équipe se
+                concentre sur ce qui fait vraiment grandir l'agence.
+              </p>
+              <div className="mt-9">
+                <Cta />
+              </div>
+              <p className="mt-4 text-sm text-foreground/70">
+                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+              </p>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* Problème */}
+        <section className="bg-cream px-5 py-20">
+          <div className="mx-auto max-w-6xl">
+            <Reveal>
+              <h2 className="max-w-2xl text-4xl sm:text-5xl">
+                Ce que j'entends dans presque chaque agence
+              </h2>
+            </Reveal>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {problemes.map((p, i) => (
+                <Reveal key={p.title} delay={i * 100} as="article">
+                  <div className="h-full rounded-xl border border-foreground/10 bg-olive-light/50 p-7">
+                    <i
+                      className={`${p.icon} mb-5 block text-2xl text-primary`}
+                      aria-hidden="true"
+                    />
+                    <h3 className="text-2xl leading-tight">{p.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-foreground/80">{p.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Agitation */}
+        <section className="bg-olive-dark px-5 py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <Reveal>
+              <h2 className="text-4xl sm:text-5xl">Le coût de l'inaction se paie chaque mois</h2>
+              <p className="mt-6 text-base leading-relaxed sm:text-lg">
+                Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
+                rapport bâclé fragilise une relation client que vous avez mis un an à construire.
+              </p>
+              <p className="mt-4 text-base leading-relaxed sm:text-lg">
+                Et tant que vos process vivent dans la tête d'une seule personne, votre agence
+                n'est pas une entreprise : c'est une dépendance. Pendant ce temps, les agences qui
+                ont automatisé livrent plus vite, avec une équipe plus petite.
+              </p>
+              <div className="mt-9">
+                <Cta />
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* Solution */}
+        <section className="px-5 py-20">
+          <div className="mx-auto max-w-6xl">
+            <Reveal>
+              <h2 className="mx-auto max-w-3xl text-center text-4xl sm:text-5xl">
+                Des agents IA conçus pour votre façon de travailler — pas un outil générique de
+                plus
+              </h2>
+            </Reveal>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {solutions.map((s, i) => (
+                <Reveal key={s.title} delay={i * 100} as="article">
+                  <div className="h-full rounded-xl bg-cream p-7">
+                    <i
+                      className={`${s.icon} mb-5 block text-2xl text-primary`}
+                      aria-hidden="true"
+                    />
+                    <h3 className="text-2xl leading-tight">{s.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-foreground/80">{s.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Transformation */}
+        <section className="bg-cream px-5 py-20">
+          <div className="mx-auto max-w-5xl">
+            <Reveal>
+              <h2 className="text-center text-4xl sm:text-5xl">Avant / Après</h2>
+            </Reveal>
+            <div className="mt-10 overflow-hidden rounded-xl border border-foreground/10">
+              <div className="grid grid-cols-2 bg-olive-light">
+                <div className="px-5 py-3 font-display text-xl">Aujourd'hui</div>
+                <div className="border-l border-foreground/10 px-5 py-3 font-display text-xl">
+                  Avec un agent IA
+                </div>
+              </div>
+              {transformation.map((row, i) => (
+                <Reveal key={row.avant[0]} delay={i * 80}>
+                  <div className="grid grid-cols-2 border-t border-foreground/10">
+                    <div className="px-5 py-5 text-sm leading-relaxed text-foreground/75">
+                      <i
+                        className="fa-solid fa-xmark mr-2 text-foreground/40"
+                        aria-hidden="true"
+                      />
+                      <strong className="font-semibold">{row.avant[0]}</strong>
+                      {row.avant[1]}
+                    </div>
+                    <div className="border-l border-foreground/10 px-5 py-5 text-sm leading-relaxed">
+                      <i className="fa-solid fa-check mr-2 text-primary" aria-hidden="true" />
+                      <strong className="font-semibold">{row.apres[0]}</strong>
+                      {row.apres[1]}
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Offre */}
+        <section className="px-5 py-20">
+          <div className="mx-auto max-w-6xl">
+            <Reveal>
+              <h2 className="text-center text-4xl sm:text-5xl">Comment on avance ensemble</h2>
+            </Reveal>
+            <ol className="mt-12 grid gap-6 md:grid-cols-4">
+              {etapes.map((e, i) => (
+                <Reveal key={e.n} delay={i * 90} as="li">
+                  <div className="h-full rounded-xl border border-foreground/15 p-6">
+                    <span className="font-display text-4xl text-primary">{e.n}</span>
+                    <h3 className="mt-3 text-2xl leading-tight">{e.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground/80">{e.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
+
+            <Reveal>
+              <h3 className="mt-20 text-center text-3xl sm:text-4xl">Cas concrets</h3>
+            </Reveal>
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {cas.map((c, i) => (
+                <Reveal key={c.nom} delay={i * 100} as="article">
+                  <div className="h-full rounded-xl bg-cream p-7">
+                    <h4 className="font-display text-3xl">{c.nom}</h4>
+                    <dl className="mt-5 space-y-4 text-sm leading-relaxed">
+                      <div>
+                        <dt className="font-semibold">Défi</dt>
+                        <dd className="text-foreground/80">{c.defi}</dd>
+                      </div>
+                      <div>
+                        <dt className="font-semibold">Solution</dt>
+                        <dd className="text-foreground/80">{c.solution}</dd>
+                      </div>
+                      <div>
+                        <dt className="font-semibold text-primary">Impact</dt>
+                        <dd className="text-foreground/80">{c.impact}</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            <Reveal>
+              <div className="mt-12 text-center">
+                <Cta />
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-cream px-5 py-20">
+          <div className="mx-auto max-w-3xl">
+            <Reveal>
+              <h2 className="text-center text-4xl sm:text-5xl">Questions fréquentes</h2>
+            </Reveal>
+            <Reveal>
+              <Accordion type="single" collapsible className="mt-10">
+                {faq.map((f) => (
+                  <AccordionItem key={f.q} value={f.q} className="border-foreground/10">
+                    <AccordionTrigger className="text-left text-base font-medium">
+                      {f.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm leading-relaxed text-foreground/80">
+                      {f.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </Reveal>
+            <Reveal>
+              <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed">
+                Vous ne signez pas avec une agence de plus : vous travaillez directement avec la
+                personne qui construit vos agents. Pas de couche commerciale, pas de junior sur
+                votre dossier — un interlocuteur unique, un périmètre clair, et des process qui
+                restent chez vous.
+              </p>
+              <div className="mt-9 text-center">
+                <Cta />
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      </main>
+
+      <footer className="bg-olive-dark px-5 py-14">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
+          <div>
+            <p className="font-display text-3xl">Julien Marchand</p>
+            <a
+              href="mailto:contact@agents-ia.eu"
+              className="mt-1 inline-flex items-center gap-2 text-sm text-primary underline underline-offset-4"
+            >
+              <i className="fa-regular fa-envelope" aria-hidden="true" />
+              contact@agents-ia.eu
+            </a>
+          </div>
+          <Cta />
+        </div>
+      </footer>
     </div>
   );
 }
