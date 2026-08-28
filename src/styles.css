@@ -6,7 +6,7 @@
 
 /*
  * Design system — consultant IA freelance.
- * Palette: olive (#B2BD7E) / olive clair (#C9D19D) / olive foncé (#8F9A5F)
+ * Palette: fond bleu clair (#C7E0EB), olive (#B2BD7E) / olive clair (#C9D19D) / olive foncé (#8F9A5F)
  * CTA violet profond (#462255), texte #231A2B, neutre chaud #F5F3EC.
  */
 
@@ -39,6 +39,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-light-blue: var(--light-blue);
   --color-olive: var(--olive);
   --color-olive-light: var(--olive-light);
   --color-olive-dark: var(--olive-dark);
@@ -48,12 +49,13 @@
 :root {
   --radius: 0.5rem;
 
+  --light-blue: #C7E0EB;
   --olive: oklch(0.79 0.062 118.5);
   --olive-light: oklch(0.845 0.055 116.5);
   --olive-dark: oklch(0.655 0.06 118);
   --cream: oklch(0.964 0.012 92);
 
-  --background: var(--olive);
+  --background: var(--light-blue);
   --foreground: oklch(0.222 0.038 316);
 
   --card: var(--cream);
