@@ -370,7 +370,7 @@ function Index() {
               <Accordion type="single" collapsible className="mt-10">
                 {faq.map((f) => (
                   <AccordionItem key={f.q} value={f.q} className="border-foreground/10">
-                    <AccordionTrigger className="text-left text-base font-medium">
+                    <AccordionTrigger className="text-left font-sans text-base font-medium normal-case tracking-normal">
                       {f.q}
                     </AccordionTrigger>
                     <AccordionContent className="text-sm leading-relaxed text-foreground/80">
