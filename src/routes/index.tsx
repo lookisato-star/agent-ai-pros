@@ -275,8 +275,13 @@ function Index() {
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {problemes.map((p, i) => (
-                <Reveal key={p.title} delay={i * 100} as="article">
-                  <div className="h-full rounded-xl border border-foreground/10 bg-secondary-bg p-7">
+                <Reveal
+                  key={p.title}
+                  delay={i * 100}
+                  as="article"
+                  animation={i % 2 === 0 ? "lightSpeedInRight" : "lightSpeedInLeft"}
+                >
+                  <div className="glass-card h-full rounded-xl p-7">
                     <i
                       className={`${p.icon} mb-5 block text-2xl text-primary`}
                       aria-hidden="true"
