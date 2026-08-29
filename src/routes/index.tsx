@@ -44,20 +44,20 @@ const CTA_HREF = "mailto:contact@agents-ia.eu?subject=Audit%20gratuit%20-%20agen
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Agents IA sur-mesure pour agences digitales | Audit gratuit" },
+      { title: "Consultant IA & conseil IA pour agences digitales | Audit gratuit" },
       {
         name: "description",
         content:
-          "Consultant freelance en agents IA pour agences web, Ads et copywriting en Europe. Qualification de leads, reporting et onboarding automatisés. Audit gratuit.",
+          "Consultant IA freelance spécialisé conseil IA pour agences web, Ads et copywriting en Europe. J'implémente des agents sur-mesure : qualification de leads, reporting et onboarding automatisés. Réserver un audit gratuit.",
       },
       {
         property: "og:title",
-        content: "Agents IA sur-mesure pour agences digitales | Audit gratuit",
+        content: "Consultant IA & conseil IA pour agences digitales | Audit gratuit",
       },
       {
         property: "og:description",
         content:
-          "J'implémente des agents IA sur-mesure qui prennent en charge la qualification de leads, le reporting client et l'onboarding.",
+          "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur-mesure.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
