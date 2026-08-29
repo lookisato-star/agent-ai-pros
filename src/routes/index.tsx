@@ -164,7 +164,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <span className="font-display text-2xl sm:text-3xl">Julien Marchand</span>
+          <span className="font-display text-2xl sm:text-3xl">KENNETH PADONOU</span>
           <a href={CTA_HREF} className="cta-btn cta-btn-sm">
             <span className="hidden sm:inline">{CTA_LABEL}</span>
             <span className="sm:hidden">Audit gratuit</span>
