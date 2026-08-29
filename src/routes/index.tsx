@@ -501,7 +501,7 @@ function Index() {
       <footer className="bg-secondary-bg px-5 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
-            <p className="font-display text-3xl">Julien Marchand</p>
+            <p className="font-display text-3xl">KENNETH PADONOU</p>
             <a
               href="mailto:contact@agents-ia.eu"
               className="mt-1 inline-flex items-center gap-2 text-sm text-muted-foreground underline underline-offset-4"
