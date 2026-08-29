@@ -151,6 +151,27 @@
   }
 }
 
+@utility floating-icon {
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.45));
+  animation: icon-float 7s ease-in-out infinite;
+}
+
+@keyframes icon-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-icon {
+    animation: none;
+  }
+}
+
 @utility reveal {
   opacity: 0;
   transform: translateY(14px);

@@ -7,6 +7,36 @@ import {
 } from "@/components/ui/accordion";
 import { Reveal } from "@/components/Reveal";
 import heroHorizon from "@/assets/hero-horizon.jpg.asset.json";
+import iconZapier from "@/assets/icon-zapier.png.asset.json";
+import iconN8n from "@/assets/icon-n8n.png.asset.json";
+import iconMake from "@/assets/icon-make.png.asset.json";
+
+const floatingIcons = [
+  {
+    src: iconZapier.url,
+    alt: "Zapier",
+    className: "left-[4%] top-[16%] w-14 sm:w-20 md:w-24",
+    delay: "0s",
+  },
+  {
+    src: iconMake.url,
+    alt: "Make",
+    className: "right-[5%] top-[12%] w-16 sm:w-24 md:w-28",
+    delay: "1.2s",
+  },
+  {
+    src: iconN8n.url,
+    alt: "n8n",
+    className: "right-[8%] bottom-[12%] w-12 sm:w-18 md:w-22",
+    delay: "2.1s",
+  },
+  {
+    src: iconZapier.url,
+    alt: "",
+    className: "left-[8%] bottom-[14%] w-11 sm:w-16 md:w-20 opacity-80",
+    delay: "0.6s",
+  },
+];
 
 const CTA_LABEL = "Réserver un audit gratuit";
 const CTA_HREF = "mailto:contact@agents-ia.eu?subject=Audit%20gratuit%20-%20agents%20IA";
@@ -189,6 +219,18 @@ function Index() {
             className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.35)_0%,_transparent_70%)]"
             aria-hidden="true"
           />
+          <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+            {floatingIcons.map((icon, i) => (
+              <img
+                key={i}
+                src={icon.src}
+                alt=""
+                className={`floating-icon absolute ${icon.className}`}
+                style={{ animationDelay: icon.delay }}
+                loading="lazy"
+              />
+            ))}
+          </div>
           <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
             <Reveal>
               <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
