@@ -182,21 +182,28 @@ function Index() {
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div
-            className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"
+            className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/70"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.35)_0%,_transparent_70%)]"
             aria-hidden="true"
           />
           <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
             <Reveal>
-              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/20 px-4 py-1.5 text-xs font-medium tracking-wide uppercase backdrop-blur">
+              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
                 Agents IA sur-mesure pour agences digitales
               </p>
-              <h1 className="text-5xl sm:text-6xl md:text-7xl">
+              <h1
+                className="text-5xl sm:text-6xl md:text-7xl"
+                style={{ textShadow: '0 3px 18px rgba(0,0,0,0.65)' }}
+              >
                 Votre agence est débordée — mais recruter n'est pas la réponse.
               </h1>
               <p
-                className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-primary-foreground/95 sm:text-lg"
-                style={{ textShadow: '0 2px 12px rgba(0,0,0,0.55)' }}
+                className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-primary-foreground sm:text-lg"
+                style={{ textShadow: '0 2px 14px rgba(0,0,0,0.65)' }}
               >
                 Vous perdez des heures sur la qualification de leads, le reporting client et
                 l'onboarding — pendant que vos concurrents automatisent déjà. J'implémente des
@@ -206,7 +213,10 @@ function Index() {
               <div className="mt-9">
                 <Cta className="cta-btn-light" />
               </div>
-              <p className="mt-4 text-sm text-primary-foreground/70">
+              <p
+                className="mt-4 text-sm text-primary-foreground/90"
+                style={{ textShadow: '0 2px 10px rgba(0,0,0,0.55)' }}
+              >
                 45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
