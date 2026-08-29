@@ -348,8 +348,8 @@ function Index() {
             <Reveal>
               <h2 className="text-center text-4xl sm:text-5xl">Avant / Après</h2>
             </Reveal>
-            <div className="mt-10 overflow-hidden rounded-xl border border-foreground/10">
-              <div className="grid grid-cols-2 bg-secondary-bg">
+            <div className="glass-card mt-10 overflow-hidden">
+              <div className="grid grid-cols-2 border-b border-foreground/10 bg-white/10">
                 <div className="px-5 py-3 font-display text-xl">Aujourd'hui</div>
                 <div className="border-l border-foreground/10 px-5 py-3 font-display text-xl">
                   Avec un agent IA
@@ -357,7 +357,7 @@ function Index() {
               </div>
               {transformation.map((row, i) => (
                 <Reveal key={row.avant[0]} delay={i * 80}>
-                  <div className="grid grid-cols-2 border-t border-foreground/10">
+                  <div className="grid grid-cols-2 border-t border-foreground/10 bg-white/5">
                     <div className="px-5 py-5 text-sm leading-relaxed text-muted-foreground">
                       <i
                         className="fa-solid fa-xmark mr-2 text-muted-foreground/60"
