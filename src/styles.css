@@ -192,6 +192,16 @@
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 24px;
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.18);
+    transform: translateY(-2px);
+  }
 }
 
 @utility light-speed-right {
