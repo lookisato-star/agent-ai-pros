@@ -201,7 +201,7 @@ function Index() {
                 concentre sur ce qui fait vraiment grandir l'agence.
               </p>
               <div className="mt-9">
-                <Cta />
+                <Cta className="cta-btn-light" />
               </div>
               <p className="mt-4 text-sm text-primary-foreground/70">
                 45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
