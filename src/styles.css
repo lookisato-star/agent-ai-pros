@@ -276,3 +276,43 @@
     animation: none;
   }
 }
+
+/* Steps board — tilted cards on dotted grid (reference style) */
+.steps-board {
+  background-image: radial-gradient(color-mix(in oklab, var(--foreground) 18%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.step-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid color-mix(in oklab, var(--foreground) 10%, transparent);
+  border-radius: 16px;
+  padding: 24px 24px 28px;
+  box-shadow: 0 14px 30px -14px rgba(33, 26, 36, 0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.step-card:hover {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow: 0 22px 40px -16px rgba(33, 26, 36, 0.3);
+}
+.step-card-pin {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  border-radius: 9999px;
+  background: var(--primary);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.9), 0 2px 6px rgba(33, 26, 36, 0.35);
+}
+@media (min-width: 640px) {
+  .step-card-1 { transform: rotate(-3deg); }
+  .step-card-2 { transform: rotate(2.5deg) translateY(24px); }
+  .step-card-3 { transform: rotate(2deg); }
+  .step-card-4 { transform: rotate(-2.5deg) translateY(24px); }
+  .step-card:hover { transform: rotate(0deg) translateY(-4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .step-card { transition: none; }
+}
