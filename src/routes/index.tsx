@@ -382,19 +382,28 @@ function Index() {
         <section className="px-5 py-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">Comment on avance ensemble</h2>
+              <p className="mx-auto w-fit rounded-full border border-foreground/20 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                Ma démarche
+              </p>
+              <h2 className="mt-4 text-center text-4xl sm:text-5xl">Comment on avance ensemble</h2>
             </Reveal>
-            <ol className="mt-12 grid gap-6 md:grid-cols-4">
+            <ol className="steps-board mt-14 grid gap-10 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-14">
               {etapes.map((e, i) => (
                 <Reveal key={e.n} delay={i * 90} as="li">
-                  <div className="h-full rounded-xl border border-foreground/15 p-6">
-                    <span className="font-display text-4xl text-primary">{e.n}</span>
-                    <h3 className="mt-3 text-2xl leading-tight">{e.title}</h3>
+                  <div className={`step-card step-card-${i + 1}`}>
+                    <span className="step-card-pin" aria-hidden="true" />
+                    <span className="text-sm font-semibold text-muted-foreground">{e.n}</span>
+                    <h3 className="mt-2 text-2xl leading-tight">{e.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
                   </div>
                 </Reveal>
               ))}
             </ol>
+            <Reveal>
+              <p className="mt-14 text-center text-lg italic text-muted-foreground">
+                → Prêt à être livré !
+              </p>
+            </Reveal>
 
             <Reveal>
               <h3 className="mt-20 text-center text-3xl sm:text-4xl">Cas concrets</h3>
