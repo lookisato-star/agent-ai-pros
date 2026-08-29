@@ -5,11 +5,13 @@ export function Reveal({
   className = "",
   delay = 0,
   as: Tag = "div",
+  animation,
 }: {
   children: ReactNode;
   className?: string;
   delay?: number;
   as?: "div" | "section" | "li" | "article";
+  animation?: "lightSpeedInRight" | "lightSpeedInLeft";
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -33,13 +35,22 @@ export function Reveal({
   }, []);
 
   const Comp = Tag as "div";
+  const animClass = animation === "lightSpeedInRight"
+    ? "light-speed-right"
+    : animation === "lightSpeedInLeft"
+      ? "light-speed-left"
+      : "reveal";
 
   return (
     <Comp
       ref={ref}
-      className={`reveal ${className}`}
+      className={`${animClass} ${className}`}
       data-visible={visible ? "true" : "false"}
-      style={{ transitionDelay: `${delay}ms` }}
+      style={
+        animation
+          ? { animationDelay: `${delay}ms` }
+          : { transitionDelay: `${delay}ms` }
+      }
     >
       {children}
     </Comp>
