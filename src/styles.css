@@ -185,10 +185,71 @@
   }
 }
 
+@utility glass-card {
+  background-color: color-mix(in srgb, var(--color-secondary-bg) 78%, transparent);
+  backdrop-filter: blur(10px);
+  border: 1px solid color-mix(in srgb, var(--color-foreground) 10%, transparent);
+}
+
+@utility light-speed-right {
+  opacity: 0;
+
+  &[data-visible="true"] {
+    animation: light-speed-in-right 0.9s ease-out forwards;
+  }
+}
+
+@utility light-speed-left {
+  opacity: 0;
+
+  &[data-visible="true"] {
+    animation: light-speed-in-left 0.9s ease-out forwards;
+  }
+}
+
+@keyframes light-speed-in-right {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(-5deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes light-speed-in-left {
+  from {
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(5deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+  .reveal,
+  .light-speed-right,
+  .light-speed-left {
     opacity: 1;
     transform: none;
     transition: none;
+    animation: none;
   }
 }
