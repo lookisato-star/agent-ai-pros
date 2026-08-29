@@ -141,6 +141,16 @@
   font-size: 0.875rem;
 }
 
+@utility cta-btn-light {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+
+  &:hover {
+    background-color: var(--color-secondary-bg);
+    transform: translateY(-1px);
+  }
+}
+
 @utility reveal {
   opacity: 0;
   transform: translateY(14px);
