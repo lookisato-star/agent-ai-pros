@@ -172,16 +172,32 @@ const cas = [
 
 const faq = [
   {
-    q: "Vous travaillez avec quelles agences, dans quelle zone ?",
-    a: "J'accompagne des agences digitales européennes (web, Ads, copywriting), en français ou en anglais, à distance. La majorité de mes clients sont en France, Belgique, Suisse et Espagne.",
+    q: "Qu'est-ce qu'un consultant IA et que fait-il concrètement ?",
+    a: "Un consultant IA accompagne une entreprise pour identifier les tâches répétitives qu'une intelligence artificielle peut prendre en charge, puis implémente des agents opérationnels. Dans mon cas, je travaille exclusivement avec des agences digitales : je cartographie vos process (prospection, reporting, onboarding), je choisis la bonne stack (Zapier, Make, n8n, API OpenAI), et je livre un agent testé sur vos vrais dossiers.",
+  },
+  {
+    q: "Quand est-ce qu'une agence a besoin de conseil en IA ?",
+    a: "Le conseil en IA devient utile quand votre équipe passe plus de temps à exécuter qu'à créer de la valeur : qualification de leads à la main, reporting refait chaque mois, onboarding dépendant d'une seule personne. Si vous repoussez des clients par manque de capacité, ou si vous hésitez à recruter par peur des charges, un consultant IA peut vous aider à gagner en capacité sans embauche.",
+  },
+  {
+    q: "Comment se déroule une mission de conseil IA avec vous ?",
+    a: "Ça commence par un audit gratuit de 45 minutes. On identifie ensemble les deux ou trois process les plus rentables à automatiser. Je vous envoie ensuite une proposition avec un périmètre fixe, un délai et un prix. Après validation, j'implémente l'agent dans votre stack existante, je le teste sur vos données, et je forme votre équipe. Vous avez 30 jours d'ajustements inclus.",
+  },
+  {
+    q: "Conseil IA en agence ou consultant IA freelance : quelle différence ?",
+    a: "Une agence de conseil en IA vend souvent un diagnostic stratégique généraliste et délègue ensuite l'exécution. En tant que consultant IA freelance, je suis à la fois le conseiller et le builder : je conçois l'agent et le construis moi-même. Pas de couche commerciale, pas de junior caché derrière le projet, un seul interlocuteur du diagnostic à la mise en production.",
+  },
+  {
+    q: "Faut-il changer nos outils existants ?",
+    a: "Non. Les agents se branchent sur ce que vous utilisez déjà : votre CRM, vos régies publicitaires, Slack, Notion, Google Workspace. L'objectif du conseil IA est d'enlever du travail, pas d'ajouter une migration coûteuse.",
+  },
+  {
+    q: "Quels résultats peut-on attendre d'un conseil IA ?",
+    a: "Les premiers résultats apparaissent dès le premier agent en production : heures récupérées chaque semaine, délais de reporting divisés, taux de leads qualifiés amélioré. Au-delà, le conseil IA vous donne une méthode pour industrialiser d'autres process sans repartir de zéro à chaque fois.",
   },
   {
     q: "Quels sont les délais d'implémentation ?",
     a: "Un premier agent utile est généralement en production entre deux et quatre semaines après la proposition, selon la complexité de vos outils et la disponibilité des accès.",
-  },
-  {
-    q: "Faut-il changer nos outils existants ?",
-    a: "Non. Les agents se branchent sur ce que vous utilisez déjà : votre CRM, vos régies publicitaires, Slack, Notion, Google Workspace. L'objectif est d'enlever du travail, pas d'ajouter une migration.",
   },
   {
     q: "Comment se passe la facturation ?",
