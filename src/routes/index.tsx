@@ -460,7 +460,14 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">Questions fréquentes</h2>
+              <h2 className="text-center text-4xl sm:text-5xl">Conseil IA & consultant IA</h2>
+            </Reveal>
+            <Reveal>
+              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+                Vous cherchez un conseil IA ou un consultant IA pour accompagner votre agence
+                digitale ? Je conçois et j'implémente des agents sur-mesure pour les agences web,
+                Ads et copywriting en Europe — directement dans vos outils existants.
+              </p>
             </Reveal>
             <Reveal>
               <Accordion type="single" collapsible className="mt-10">
@@ -478,9 +485,9 @@ function Index() {
             </Reveal>
             <Reveal>
               <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed">
-                Vous ne signez pas avec une agence de plus : vous travaillez directement avec la
-                personne qui construit vos agents. Pas de couche commerciale, pas de junior sur
-                votre dossier — un interlocuteur unique, un périmètre clair, et des process qui
+                Vous ne signez pas avec une agence de plus : vous travaillez directement avec le
+                consultant IA qui construit vos agents. Pas de couche commerciale, pas de junior
+                sur votre dossier — un interlocuteur unique, un périmètre clair, et des process qui
                 restent chez vous.
               </p>
               <div className="mt-9 text-center">
