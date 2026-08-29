@@ -182,7 +182,7 @@ function Index() {
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div
-            className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"
+            className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"
             aria-hidden="true"
           />
           <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
@@ -194,7 +194,10 @@ function Index() {
               <h1 className="text-5xl sm:text-6xl md:text-7xl">
                 Votre agence est débordée — mais recruter n'est pas la réponse.
               </h1>
-              <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
+              <p
+                className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-primary-foreground/95 sm:text-lg"
+                style={{ textShadow: '0 2px 12px rgba(0,0,0,0.55)' }}
+              >
                 Vous perdez des heures sur la qualification de leads, le reporting client et
                 l'onboarding — pendant que vos concurrents automatisent déjà. J'implémente des
                 agents IA sur-mesure qui prennent en charge ces tâches, pour que votre équipe se
