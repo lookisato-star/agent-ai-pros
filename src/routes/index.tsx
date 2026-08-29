@@ -310,7 +310,7 @@ function Index() {
                 ont automatisé livrent plus vite, avec une équipe plus petite.
               </p>
               <div className="mt-9">
-                <Cta />
+                <Cta className="cta-btn-white" />
               </div>
             </Reveal>
           </div>
