@@ -44,20 +44,20 @@ const CTA_HREF = "mailto:contact@agents-ia.eu?subject=Audit%20gratuit%20-%20agen
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Agents IA sur-mesure pour agences digitales | Audit gratuit" },
+      { title: "Consultant IA & conseil IA pour agences digitales | Audit gratuit" },
       {
         name: "description",
         content:
-          "Consultant freelance en agents IA pour agences web, Ads et copywriting en Europe. Qualification de leads, reporting et onboarding automatisés. Audit gratuit.",
+          "Consultant IA freelance spécialisé conseil IA pour agences web, Ads et copywriting en Europe. J'implémente des agents sur-mesure : qualification de leads, reporting et onboarding automatisés. Réserver un audit gratuit.",
       },
       {
         property: "og:title",
-        content: "Agents IA sur-mesure pour agences digitales | Audit gratuit",
+        content: "Consultant IA & conseil IA pour agences digitales | Audit gratuit",
       },
       {
         property: "og:description",
         content:
-          "J'implémente des agents IA sur-mesure qui prennent en charge la qualification de leads, le reporting client et l'onboarding.",
+          "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur-mesure.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -172,16 +172,32 @@ const cas = [
 
 const faq = [
   {
-    q: "Vous travaillez avec quelles agences, dans quelle zone ?",
-    a: "J'accompagne des agences digitales européennes (web, Ads, copywriting), en français ou en anglais, à distance. La majorité de mes clients sont en France, Belgique, Suisse et Espagne.",
+    q: "Qu'est-ce qu'un consultant IA et que fait-il concrètement ?",
+    a: "Un consultant IA accompagne une entreprise pour identifier les tâches répétitives qu'une intelligence artificielle peut prendre en charge, puis implémente des agents opérationnels. Dans mon cas, je travaille exclusivement avec des agences digitales : je cartographie vos process (prospection, reporting, onboarding), je choisis la bonne stack (Zapier, Make, n8n, API OpenAI), et je livre un agent testé sur vos vrais dossiers.",
+  },
+  {
+    q: "Quand est-ce qu'une agence a besoin de conseil en IA ?",
+    a: "Le conseil en IA devient utile quand votre équipe passe plus de temps à exécuter qu'à créer de la valeur : qualification de leads à la main, reporting refait chaque mois, onboarding dépendant d'une seule personne. Si vous repoussez des clients par manque de capacité, ou si vous hésitez à recruter par peur des charges, un consultant IA peut vous aider à gagner en capacité sans embauche.",
+  },
+  {
+    q: "Comment se déroule une mission de conseil IA avec vous ?",
+    a: "Ça commence par un audit gratuit de 45 minutes. On identifie ensemble les deux ou trois process les plus rentables à automatiser. Je vous envoie ensuite une proposition avec un périmètre fixe, un délai et un prix. Après validation, j'implémente l'agent dans votre stack existante, je le teste sur vos données, et je forme votre équipe. Vous avez 30 jours d'ajustements inclus.",
+  },
+  {
+    q: "Conseil IA en agence ou consultant IA freelance : quelle différence ?",
+    a: "Une agence de conseil en IA vend souvent un diagnostic stratégique généraliste et délègue ensuite l'exécution. En tant que consultant IA freelance, je suis à la fois le conseiller et le builder : je conçois l'agent et le construis moi-même. Pas de couche commerciale, pas de junior caché derrière le projet, un seul interlocuteur du diagnostic à la mise en production.",
+  },
+  {
+    q: "Faut-il changer nos outils existants ?",
+    a: "Non. Les agents se branchent sur ce que vous utilisez déjà : votre CRM, vos régies publicitaires, Slack, Notion, Google Workspace. L'objectif du conseil IA est d'enlever du travail, pas d'ajouter une migration coûteuse.",
+  },
+  {
+    q: "Quels résultats peut-on attendre d'un conseil IA ?",
+    a: "Les premiers résultats apparaissent dès le premier agent en production : heures récupérées chaque semaine, délais de reporting divisés, taux de leads qualifiés amélioré. Au-delà, le conseil IA vous donne une méthode pour industrialiser d'autres process sans repartir de zéro à chaque fois.",
   },
   {
     q: "Quels sont les délais d'implémentation ?",
     a: "Un premier agent utile est généralement en production entre deux et quatre semaines après la proposition, selon la complexité de vos outils et la disponibilité des accès.",
-  },
-  {
-    q: "Faut-il changer nos outils existants ?",
-    a: "Non. Les agents se branchent sur ce que vous utilisez déjà : votre CRM, vos régies publicitaires, Slack, Notion, Google Workspace. L'objectif est d'enlever du travail, pas d'ajouter une migration.",
   },
   {
     q: "Comment se passe la facturation ?",
@@ -444,7 +460,14 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">Questions fréquentes</h2>
+              <h2 className="text-center text-4xl sm:text-5xl">Conseil IA & consultant IA</h2>
+            </Reveal>
+            <Reveal>
+              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+                Vous cherchez un conseil IA ou un consultant IA pour accompagner votre agence
+                digitale ? Je conçois et j'implémente des agents sur-mesure pour les agences web,
+                Ads et copywriting en Europe — directement dans vos outils existants.
+              </p>
             </Reveal>
             <Reveal>
               <Accordion type="single" collapsible className="mt-10">
@@ -462,9 +485,9 @@ function Index() {
             </Reveal>
             <Reveal>
               <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed">
-                Vous ne signez pas avec une agence de plus : vous travaillez directement avec la
-                personne qui construit vos agents. Pas de couche commerciale, pas de junior sur
-                votre dossier — un interlocuteur unique, un périmètre clair, et des process qui
+                Vous ne signez pas avec une agence de plus : vous travaillez directement avec le
+                consultant IA qui construit vos agents. Pas de couche commerciale, pas de junior
+                sur votre dossier — un interlocuteur unique, un périmètre clair, et des process qui
                 restent chez vous.
               </p>
               <div className="mt-9 text-center">
@@ -478,7 +501,7 @@ function Index() {
       <footer className="bg-secondary-bg px-5 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
-            <p className="font-display text-3xl">Julien Marchand</p>
+            <p className="font-display text-3xl">KENNETH PADONOU</p>
             <a
               href="mailto:contact@agents-ia.eu"
               className="mt-1 inline-flex items-center gap-2 text-sm text-muted-foreground underline underline-offset-4"
