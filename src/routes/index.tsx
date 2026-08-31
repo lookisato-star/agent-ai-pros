@@ -39,7 +39,7 @@ const floatingIcons = [
 ];
 
 const CTA_LABEL = "Réserver un audit gratuit";
-const CTA_HREF = "mailto:contact@agents-ia.eu?subject=Audit%20gratuit%20-%20agents%20IA";
+const CTA_HREF = "/audit-gratuit";
 
 export const Route = createFileRoute("/")({
   head: () => ({
