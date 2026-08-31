@@ -15,6 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Reveal } from "@/components/Reveal";
+import { saveAuditRequest } from "@/lib/track";
 
 const PHONE_NUMBER = "33147657721";
 
@@ -105,8 +106,20 @@ function AuditGratuit() {
     },
   });
 
-  const onSubmit = (data: AuditForm) => {
+  const onSubmit = async (data: AuditForm) => {
     setIsSubmitting(true);
+
+    // Enregistre la demande (qui + quand) avant la redirection WhatsApp.
+    await saveAuditRequest({
+      name: data.name,
+      email: data.email,
+      agency: data.agency,
+      website: data.website || null,
+      phone: data.phone || null,
+      process: data.process,
+      message: data.message,
+    });
+
 
     const lines = [
       "Bonjour, je souhaite réserver un audit gratuit pour mon agence.",
