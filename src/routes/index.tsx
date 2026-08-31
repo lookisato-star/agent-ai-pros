@@ -10,6 +10,7 @@ import heroHorizon from "@/assets/hero-horizon.jpg.asset.json";
 import iconZapier from "@/assets/icon-zapier.png.asset.json";
 import iconN8n from "@/assets/icon-n8n.png.asset.json";
 import iconMake from "@/assets/icon-make.png.asset.json";
+import agentDemo from "@/assets/agent-ia-demo.mp4.asset.json";
 
 const floatingIcons = [
   {
