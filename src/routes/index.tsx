@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Reveal } from "@/components/Reveal";
+import { trackCtaClick } from "@/lib/track";
 import heroHorizon from "@/assets/hero-horizon.jpg.asset.json";
 import iconZapier from "@/assets/icon-zapier.png.asset.json";
 import iconN8n from "@/assets/icon-n8n.png.asset.json";
@@ -67,9 +68,21 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-function Cta({ small = false, className = "" }: { small?: boolean; className?: string }) {
+function Cta({
+  small = false,
+  className = "",
+  location = "inconnu",
+}: {
+  small?: boolean;
+  className?: string;
+  location?: string;
+}) {
   return (
-    <Link to={CTA_HREF} className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}>
+    <Link
+      to={CTA_HREF}
+      className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}
+      onClick={() => trackCtaClick(location)}
+    >
       {CTA_LABEL}
       <i className="fa-solid fa-arrow-right" aria-hidden="true" />
     </Link>
@@ -212,7 +225,11 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <span className="font-display text-2xl sm:text-3xl">KENNETH PADONOU</span>
-          <Link to={CTA_HREF} className="cta-btn cta-btn-sm">
+          <Link
+            to={CTA_HREF}
+            className="cta-btn cta-btn-sm"
+            onClick={() => trackCtaClick("header")}
+          >
             <span className="hidden sm:inline">{CTA_LABEL}</span>
             <span className="sm:hidden">Audit gratuit</span>
           </Link>
@@ -270,7 +287,7 @@ function Index() {
                 concentre sur ce qui fait vraiment grandir l'agence.
               </p>
               <div className="mt-9">
-                <Cta className="cta-btn-light" />
+                <Cta className="cta-btn-light" location="hero" />
               </div>
               <p
                 className="mt-4 text-sm text-primary-foreground/90"
@@ -332,7 +349,7 @@ function Index() {
                 ont automatisé livrent plus vite, avec une équipe plus petite.
               </p>
               <div className="mt-9">
-                <Cta className="cta-btn-white" />
+                <Cta className="cta-btn-white" location="agitation" />
               </div>
             </Reveal>
           </div>
@@ -398,7 +415,7 @@ function Index() {
             </Reveal>
             <Reveal delay={200}>
               <div className="mt-10">
-                <Cta />
+                <Cta location="video" />
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
                 45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
@@ -499,7 +516,7 @@ function Index() {
 
             <Reveal>
               <div className="mt-12 text-center">
-                <Cta />
+                <Cta location="offre" />
               </div>
             </Reveal>
           </div>
@@ -540,7 +557,7 @@ function Index() {
                 restent chez vous.
               </p>
               <div className="mt-9 text-center">
-                <Cta />
+                <Cta location="positionnement" />
               </div>
             </Reveal>
           </div>
@@ -559,7 +576,7 @@ function Index() {
               contact@agents-ia.eu
             </a>
           </div>
-          <Cta />
+          <Cta location="footer" />
         </div>
       </footer>
     </div>
