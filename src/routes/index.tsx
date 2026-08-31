@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Accordion,
   AccordionContent,
@@ -39,7 +39,7 @@ const floatingIcons = [
 ];
 
 const CTA_LABEL = "Réserver un audit gratuit";
-const CTA_HREF = "mailto:contact@agents-ia.eu?subject=Audit%20gratuit%20-%20agents%20IA";
+const CTA_HREF = "/audit-gratuit";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,10 +68,10 @@ export const Route = createFileRoute("/")({
 
 function Cta({ small = false, className = "" }: { small?: boolean; className?: string }) {
   return (
-    <a href={CTA_HREF} className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}>
+    <Link to={CTA_HREF} className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}>
       {CTA_LABEL}
       <i className="fa-solid fa-arrow-right" aria-hidden="true" />
-    </a>
+    </Link>
   );
 }
 
@@ -211,10 +211,10 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <span className="font-display text-2xl sm:text-3xl">KENNETH PADONOU</span>
-          <a href={CTA_HREF} className="cta-btn cta-btn-sm">
+          <Link to={CTA_HREF} className="cta-btn cta-btn-sm">
             <span className="hidden sm:inline">{CTA_LABEL}</span>
             <span className="sm:hidden">Audit gratuit</span>
-          </a>
+          </Link>
         </div>
       </header>
 
