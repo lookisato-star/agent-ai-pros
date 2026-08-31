@@ -68,10 +68,10 @@ export const Route = createFileRoute("/")({
 
 function Cta({ small = false, className = "" }: { small?: boolean; className?: string }) {
   return (
-    <a href={CTA_HREF} className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}>
+    <Link to={CTA_HREF} className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}>
       {CTA_LABEL}
       <i className="fa-solid fa-arrow-right" aria-hidden="true" />
-    </a>
+    </Link>
   );
 }
 
