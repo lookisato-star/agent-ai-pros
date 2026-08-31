@@ -364,6 +364,49 @@ function Index() {
           </div>
         </section>
 
+        {/* Vidéo démo */}
+        <section className="bg-secondary-bg px-5 py-20">
+          <div className="mx-auto max-w-4xl text-center">
+            <Reveal>
+              <p className="mx-auto w-fit rounded-full border border-foreground/20 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                Voir un agent en action
+              </p>
+              <h2 className="mt-4 text-4xl sm:text-5xl">
+                Un agent IA qui travaille pendant que vous dormez
+              </h2>
+              <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                Cette démo montre comment un agent qualifie automatiquement une demande entrante,
+                l'enrichit et la crée dans votre CRM — sans intervention manuelle.
+              </p>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="mt-10 overflow-hidden rounded-2xl border border-foreground/10 bg-background shadow-2xl">
+                <video
+                  src={agentDemo.url}
+                  width={1280}
+                  height={720}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                  preload="metadata"
+                  className="aspect-video w-full"
+                  aria-label="Démonstration d'un agent IA qualifiant un lead et le créant dans un CRM"
+                />
+              </div>
+            </Reveal>
+            <Reveal delay={200}>
+              <div className="mt-10">
+                <Cta />
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground">
+                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+              </p>
+            </Reveal>
+          </div>
+        </section>
+
         {/* Transformation */}
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-5xl">
