@@ -308,6 +308,11 @@ function Index() {
                 </Reveal>
               ))}
             </div>
+            <Reveal>
+              <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
+                Ces problèmes ralentissent votre productivité et vous détournent du plus important : délivrer de la valeur.
+              </p>
+            </Reveal>
           </div>
         </section>
 
