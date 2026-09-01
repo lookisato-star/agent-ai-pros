@@ -629,10 +629,44 @@ function Index() {
               ))}
             </div>
 
+          </div>
+        </section>
+
+        {/* Garanties */}
+        <section className="bg-reassurance-bg px-5 py-20">
+          <div className="mx-auto max-w-6xl">
             <Reveal>
-              <div className="mt-12 text-center">
+              <h2 className="text-center text-4xl sm:text-5xl">Ce que je vous garantis, concrètement</h2>
+            </Reveal>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {garanties.map((g, i) => (
+                <Reveal key={g.title} delay={i * 100} as="article">
+                  <div className="flex h-full flex-col rounded-xl border border-foreground/10 bg-background/70 p-7">
+                    <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                      <i className="fa-solid fa-check" aria-hidden="true" />
+                    </div>
+                    <h3 className="text-2xl leading-tight">{g.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{g.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA final */}
+        <section className="bg-background px-5 py-16">
+          <div className="mx-auto max-w-3xl text-center">
+            <Reveal>
+              <p className="text-lg text-muted-foreground">
+                Vous avez un process qui mérite d'être automatisé ?
+              </p>
+              <div className="mt-6">
                 <Cta location="offre" />
               </div>
+              <p className="mt-4 text-sm text-muted-foreground">
+                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+              </p>
             </Reveal>
           </div>
         </section>
