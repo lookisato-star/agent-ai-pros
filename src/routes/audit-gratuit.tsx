@@ -286,7 +286,7 @@ function AuditGratuit() {
                           </SelectItem>
                           <SelectItem value="reporting">Reporting client automatisé</SelectItem>
                           <SelectItem value="onboarding">Onboarding client fluide</SelectItem>
-                          <SelectItem value="autre">Autre process</SelectItem>
+                          <SelectItem value="autre">Personnalisez</SelectItem>
                         </SelectContent>
                       </Select>
                     )}
