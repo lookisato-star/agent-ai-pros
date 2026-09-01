@@ -268,16 +268,41 @@
   }
 }
 
+@utility heart-beat {
+  animation: heart-beat 1.6s ease-in-out infinite;
+}
+
+@keyframes heart-beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.08);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.08);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .light-speed-right,
-  .light-speed-left {
+  .light-speed-left,
+  .heart-beat {
     opacity: 1;
     transform: none;
     transition: none;
     animation: none;
   }
 }
+
 
 /* Steps board — tilted cards on dotted grid (reference style) */
 .steps-board {
