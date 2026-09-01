@@ -334,6 +334,8 @@
   .reveal,
   .light-speed-right,
   .light-speed-left,
+  .fade-in-left,
+  .fade-in-right,
   .heart-beat {
     opacity: 1;
     transform: none;
@@ -341,6 +343,7 @@
     animation: none;
   }
 }
+
 
 
 /* Steps board — tilted cards on dotted grid (reference style) */
