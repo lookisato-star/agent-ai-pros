@@ -63,24 +63,26 @@ type AuditForm = z.infer<typeof auditSchema>;
 export const Route = createFileRoute("/audit-gratuit")({
   head: () => ({
     meta: [
-      { title: "Réserver un audit gratuit — Kenneth Padonou" },
+      { title: "Audit Gratuit Consultant IA & Conseil IA | Agence Digitale" },
       {
         name: "description",
         content:
-          "Demandez un audit gratuit de 45 minutes pour identifier les process de votre agence digitale à automatiser avec l'IA. Réponse par WhatsApp.",
+          "Réservez un audit gratuit de 45 minutes avec un consultant IA spécialisé agences digitales. Conseil IA personnalisé pour automatiser vos process : prospection, reporting, onboarding. Réponse par WhatsApp.",
       },
       {
         property: "og:title",
-        content: "Réserver un audit gratuit — Kenneth Padonou",
+        content: "Audit Gratuit Consultant IA & Conseil IA | Agence Digitale",
       },
       {
         property: "og:description",
         content:
-          "Audit gratuit de 45 minutes pour agences digitales : qualification de leads, reporting client, onboarding automatisé.",
+          "Audit gratuit de 45 minutes avec un consultant IA spécialisé agences digitales. Conseil IA personnalisé pour automatiser vos process.",
       },
+      { property: "og:url", content: "https://agent-ai-pros.lovable.app/audit-gratuit" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://agent-ai-pros.lovable.app/audit-gratuit" }],
   }),
   component: AuditGratuit,
 });
