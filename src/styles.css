@@ -83,6 +83,7 @@
   --olive-light: oklch(0.845 0.055 116.5);
   --olive-dark: oklch(0.655 0.06 118);
   --cream: #FAF8F5;
+  --reassurance-bg: #EEF5F8;
 }
 
 @layer base {
