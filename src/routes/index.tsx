@@ -47,24 +47,26 @@ const CTA_HREF = "/audit-gratuit";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Consultant IA & conseil IA pour agences digitales | Audit gratuit" },
+      { title: "Consultant IA & Conseil IA pour Agence Digitale | Audit Gratuit" },
       {
         name: "description",
         content:
-          "Consultant IA freelance spécialisé conseil IA pour agences web, Ads et copywriting en Europe. J'implémente des agents sur-mesure : qualification de leads, reporting et onboarding automatisés. Réserver un audit gratuit.",
+          "Consultant IA freelance spécialisé conseil IA pour agences digitales en Europe. J'implémente des agents IA sur-mesure (prospection, reporting, onboarding) pour agences web, Ads et copywriting. Réservez un audit gratuit de 45 min.",
       },
       {
         property: "og:title",
-        content: "Consultant IA & conseil IA pour agences digitales | Audit gratuit",
+        content: "Consultant IA & Conseil IA pour Agence Digitale | Audit Gratuit",
       },
       {
         property: "og:description",
         content:
           "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur-mesure.",
       },
+      { property: "og:url", content: "https://agent-ai-pros.lovable.app/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://agent-ai-pros.lovable.app/" }],
   }),
   component: Index,
 });
@@ -308,7 +310,7 @@ function Index() {
             <Reveal>
               <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
-                Agents IA sur-mesure pour agences digitales
+                Consultant IA & conseil IA — agents sur-mesure pour agences digitales
               </p>
               <h1
                 className="text-5xl sm:text-6xl md:text-7xl"
@@ -343,7 +345,7 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="max-w-2xl text-4xl sm:text-5xl">
-                Ce que j'entends dans presque chaque agence
+                Ce que j'entends dans presque chaque agence digitale
               </h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -399,7 +401,7 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-center text-4xl sm:text-5xl">
-                Des agents IA conçus pour votre façon de travailler — pas un outil générique de
+                Des agents IA conçus pour votre agence digitale — pas un outil générique de
                 plus
               </h2>
             </Reveal>
@@ -425,10 +427,10 @@ function Index() {
           <div className="mx-auto max-w-5xl">
             <Reveal>
               <h2 className="text-center text-4xl sm:text-5xl">
-                Des outils éprouvés, pas des gadgets
+                Des outils éprouvés pour votre conseil IA
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
-                Je ne teste pas sur vos process. Chaque outil est choisi pour sa fiabilité en production.
+                Chaque outil est choisi pour sa fiabilité en production chez les agences digitales, pas pour la tendance.
               </p>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -478,7 +480,7 @@ function Index() {
                   </h2>
                   <div className="mt-6 space-y-4 text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
                     <p>
-                      Je suis Kenneth, consultant freelance spécialisé dans la création d'agents IA pour les agences digitales.
+                      Je suis Kenneth, consultant IA freelance spécialisé dans la création d'agents IA pour les agences digitales.
                     </p>
                     <p>
                       Mon approche part d'un constat simple : dans une agence, chaque heure passée sur une tâche répétitive (qualifier un lead, monter un reporting, relancer un onboarding) est une heure qui n'est pas vendue à un client, ou pas investie sur ce qui fait vraiment grandir l'agence.
@@ -507,8 +509,8 @@ function Index() {
                 Un agent IA qui travaille pendant que vous dormez
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Cette démo montre comment un agent qualifie automatiquement une demande entrante,
-                l'enrichit et la crée dans votre CRM — sans intervention manuelle.
+                Cette démo montre comment un agent IA qualifie automatiquement une demande entrante
+                dans une agence digitale, l'enrichit et la crée dans votre CRM — sans intervention manuelle.
               </p>
             </Reveal>
             <Reveal delay={120}>
@@ -582,7 +584,7 @@ function Index() {
               <p className="mx-auto w-fit rounded-full border border-foreground/20 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
                 Ma démarche
               </p>
-              <h2 className="mt-4 text-center text-4xl sm:text-5xl">Comment on avance ensemble</h2>
+              <h2 className="mt-4 text-center text-4xl sm:text-5xl">Comment on avance ensemble, consultant IA et agence digitale</h2>
             </Reveal>
             <ol className="steps-board mt-14 grid gap-10 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-14">
               {etapes.map((e, i) => (
@@ -636,7 +638,7 @@ function Index() {
         <section className="bg-reassurance-bg px-5 py-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">Ce que je vous garantis, concrètement</h2>
+              <h2 className="text-center text-4xl sm:text-5xl">Ce que je vous garantis, concrètement, en tant qu'agence digitale</h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {garanties.map((g, i) => (
