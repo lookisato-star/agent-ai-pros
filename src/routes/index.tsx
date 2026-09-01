@@ -125,6 +125,29 @@ const solutions = [
   },
 ];
 
+const tools = [
+  {
+    name: "n8n",
+    text: "L'orchestrateur qui connecte vos outils entre eux, sans dépendre d'une API tierce fragile.",
+    image: iconN8n.url,
+  },
+  {
+    name: "Make",
+    text: "Pour les automatisations rapides à déployer et faciles à faire évoluer avec votre équipe.",
+    image: iconMake.url,
+  },
+  {
+    name: "Claude (Anthropic)",
+    text: "Le moteur IA derrière la qualification, la rédaction et la prise de décision de vos agents — précis, fiable, peu d'hallucinations.",
+    icon: "fa-solid fa-brain",
+  },
+  {
+    name: "Vos outils existants",
+    text: "CRM, formulaires, Ads, reporting — je connecte l'agent à ce que vous utilisez déjà, pas l'inverse.",
+    icon: "fa-solid fa-plug",
+  },
+];
+
 const transformation = [
   {
     avant: ["Qualification", " des leads à la main, une par une"],
