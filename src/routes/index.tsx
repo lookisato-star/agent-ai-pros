@@ -83,12 +83,13 @@ function Cta({
   return (
     <Link
       to={CTA_HREF}
-      className={`cta-btn ${small ? "cta-btn-sm" : ""} ${className}`}
+      className={`cta-btn heart-beat ${small ? "cta-btn-sm" : ""} ${className}`}
       onClick={() => trackCtaClick(location)}
     >
       {CTA_LABEL}
       <i className="fa-solid fa-arrow-right" aria-hidden="true" />
     </Link>
+
   );
 }
 
