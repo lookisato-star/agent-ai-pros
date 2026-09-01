@@ -45,6 +45,7 @@
   --color-olive-light: var(--olive-light);
   --color-olive-dark: var(--olive-dark);
   --color-cream: var(--cream);
+  --color-reassurance-bg: var(--reassurance-bg);
 }
 
 :root {
