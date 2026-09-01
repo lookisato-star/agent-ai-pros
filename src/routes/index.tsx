@@ -12,6 +12,7 @@ import iconZapier from "@/assets/icon-zapier.png.asset.json";
 import iconN8n from "@/assets/icon-n8n.png.asset.json";
 import iconMake from "@/assets/icon-make.png.asset.json";
 import agentDemo from "@/assets/agent-ia-demo.mp4.asset.json";
+import kennethPortrait from "@/assets/kenneth-portrait.jpg.asset.json";
 
 const floatingIcons = [
   {
@@ -437,6 +438,46 @@ function Index() {
                 Le bon outil n'est jamais choisi pour la tendance. Il est choisi parce qu'il tient en production, chez vous.
               </p>
             </Reveal>
+          </div>
+        </section>
+
+        {/* Crédibilité — Kenneth */}
+        <section className="bg-foreground px-5 py-20 text-primary-foreground">
+          <div className="mx-auto max-w-5xl">
+            <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
+              <Reveal>
+                <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 shadow-2xl md:max-w-none">
+                  <img
+                    src={kennethPortrait.url}
+                    alt="Kenneth Padonou, consultant freelance spécialisé en agents IA pour agences digitales"
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary-foreground/10" />
+                </div>
+              </Reveal>
+              <Reveal delay={120}>
+                <div>
+                  <h2 className="text-3xl leading-tight sm:text-4xl md:text-5xl">
+                    Je ne vends pas des agents IA. Je vends du temps récupéré et du CA débloqué.
+                  </h2>
+                  <div className="mt-6 space-y-4 text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
+                    <p>
+                      Je suis Kenneth, consultant freelance spécialisé dans la création d'agents IA pour les agences digitales.
+                    </p>
+                    <p>
+                      Mon approche part d'un constat simple : dans une agence, chaque heure passée sur une tâche répétitive (qualifier un lead, monter un reporting, relancer un onboarding) est une heure qui n'est pas vendue à un client, ou pas investie sur ce qui fait vraiment grandir l'agence.
+                    </p>
+                    <p>
+                      Je ne construis pas des automatisations pour le principe. Je pars de votre goulot d'étranglement — là où vous perdez du temps ou des opportunités — et je construis l'agent IA qui le résout, connecté à vos outils existants.
+                    </p>
+                    <p className="text-primary-foreground">
+                      Résultat concret : des heures libérées pour vos équipes, des leads mieux qualifiés, un onboarding qui ne dépend plus d'une seule personne. Vous ne travaillez pas avec un prestataire technique de plus. Vous travaillez avec quelqu'un qui construit pour un seul objectif : que ça se voie sur votre capacité à facturer plus, sans embaucher plus.
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
           </div>
         </section>
 
