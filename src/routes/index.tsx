@@ -208,6 +208,21 @@ const cas = [
   },
 ];
 
+const garanties = [
+  {
+    title: "Pas d'abonnement forcé",
+    text: "Vous payez le projet, pas un forfait mensuel obligatoire. Si vous voulez de la maintenance ensuite, c'est vous qui décidez.",
+  },
+  {
+    title: "Vous restez propriétaire du système",
+    text: "Le workflow, les prompts, les automatisations : tout reste sur votre compte (Make, n8n, ou autre). Aucune dépendance cachée.",
+  },
+  {
+    title: "Ajustements inclus jusqu'à validation",
+    text: "L'agent n'est pas figé à la livraison. On ajuste ensemble jusqu'à ce qu'il tourne exactement comme prévu.",
+  },
+];
+
 const faq = [
   {
     q: "Qu'est-ce qu'un consultant IA et que fait-il concrètement ?",
