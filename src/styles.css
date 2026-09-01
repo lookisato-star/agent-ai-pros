@@ -232,6 +232,22 @@
   }
 }
 
+@utility fade-in-left {
+  opacity: 0;
+
+  &[data-visible="true"] {
+    animation: fade-in-left 0.8s ease-out forwards;
+  }
+}
+
+@utility fade-in-right {
+  opacity: 0;
+
+  &[data-visible="true"] {
+    animation: fade-in-right 0.8s ease-out forwards;
+  }
+}
+
 @keyframes light-speed-in-right {
   from {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -267,6 +283,29 @@
     opacity: 1;
   }
 }
+
+@keyframes fade-in-left {
+  from {
+    transform: translate3d(-60px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    transform: translate3d(60px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 
 @utility heart-beat {
   animation: heart-beat 1.6s ease-in-out infinite;

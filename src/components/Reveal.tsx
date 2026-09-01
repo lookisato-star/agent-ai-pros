@@ -11,7 +11,8 @@ export function Reveal({
   className?: string;
   delay?: number;
   as?: "div" | "section" | "li" | "article";
-  animation?: "lightSpeedInRight" | "lightSpeedInLeft";
+  animation?: "lightSpeedInRight" | "lightSpeedInLeft" | "fadeInLeft" | "fadeInRight";
+
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
