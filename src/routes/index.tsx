@@ -47,24 +47,26 @@ const CTA_HREF = "/audit-gratuit";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Consultant IA & conseil IA pour agences digitales | Audit gratuit" },
+      { title: "Consultant IA & Conseil IA pour Agence Digitale | Audit Gratuit" },
       {
         name: "description",
         content:
-          "Consultant IA freelance spécialisé conseil IA pour agences web, Ads et copywriting en Europe. J'implémente des agents sur-mesure : qualification de leads, reporting et onboarding automatisés. Réserver un audit gratuit.",
+          "Consultant IA freelance spécialisé conseil IA pour agences digitales en Europe. J'implémente des agents IA sur-mesure (prospection, reporting, onboarding) pour agences web, Ads et copywriting. Réservez un audit gratuit de 45 min.",
       },
       {
         property: "og:title",
-        content: "Consultant IA & conseil IA pour agences digitales | Audit gratuit",
+        content: "Consultant IA & Conseil IA pour Agence Digitale | Audit Gratuit",
       },
       {
         property: "og:description",
         content:
           "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur-mesure.",
       },
+      { property: "og:url", content: "https://agent-ai-pros.lovable.app/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://agent-ai-pros.lovable.app/" }],
   }),
   component: Index,
 });
