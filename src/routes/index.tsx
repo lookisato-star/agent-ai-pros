@@ -463,7 +463,7 @@ function Index() {
         <section className="bg-foreground px-5 py-20 text-primary-foreground">
           <div className="mx-auto max-w-5xl">
             <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
-              <Reveal>
+              <Reveal animation="fadeInLeft">
                 <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 shadow-2xl md:max-w-none">
                   <img
                     src={kennethPortrait.url}
@@ -474,7 +474,7 @@ function Index() {
                   <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary-foreground/10" />
                 </div>
               </Reveal>
-              <Reveal delay={120}>
+              <Reveal animation="fadeInRight" delay={120}>
                 <div>
                   <h2 className="text-3xl leading-tight sm:text-4xl md:text-5xl">
                     Je ne vends pas des agents IA. Je vends du temps récupéré et du CA débloqué.
@@ -498,6 +498,7 @@ function Index() {
             </div>
           </div>
         </section>
+
 
         {/* Vidéo démo */}
         <section className="bg-secondary-bg px-5 py-20">

@@ -40,7 +40,12 @@ export function Reveal({
     ? "light-speed-right"
     : animation === "lightSpeedInLeft"
       ? "light-speed-left"
-      : "reveal";
+      : animation === "fadeInLeft"
+        ? "fade-in-left"
+        : animation === "fadeInRight"
+          ? "fade-in-right"
+          : "reveal";
+
 
   return (
     <Comp
