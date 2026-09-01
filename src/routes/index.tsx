@@ -381,6 +381,42 @@ function Index() {
           </div>
         </section>
 
+        {/* Outils éprouvés */}
+        <section className="bg-foreground px-5 py-20 text-primary-foreground">
+          <div className="mx-auto max-w-5xl">
+            <Reveal>
+              <h2 className="text-center text-4xl sm:text-5xl">
+                Des outils éprouvés, pas des gadgets
+              </h2>
+              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
+                Je ne teste pas sur vos process. Chaque outil est choisi pour sa fiabilité en production.
+              </p>
+            </Reveal>
+            <div className="mt-12 grid gap-6 md:grid-cols-2">
+              {tools.map((t, i) => (
+                <Reveal key={t.name} delay={i * 100} as="article">
+                  <div className="h-full rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-7 transition-colors hover:border-primary-foreground/20 hover:bg-primary-foreground/[0.07]">
+                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-foreground/10">
+                      {t.image ? (
+                        <img src={t.image} alt="" className="h-8 w-8 object-contain" />
+                      ) : (
+                        <i className={`${t.icon} text-xl text-primary-foreground`} aria-hidden="true" />
+                      )}
+                    </div>
+                    <h3 className="text-2xl leading-tight">{t.name}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">{t.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+            <Reveal>
+              <p className="mx-auto mt-12 max-w-2xl text-center text-base italic text-primary-foreground/70 sm:text-lg">
+                Le bon outil n'est jamais choisi pour la tendance. Il est choisi parce qu'il tient en production, chez vous.
+              </p>
+            </Reveal>
+          </div>
+        </section>
+
         {/* Vidéo démo */}
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-4xl text-center">
