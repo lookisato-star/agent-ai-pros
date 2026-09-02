@@ -320,13 +320,13 @@ function Index() {
             <Reveal>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
-                Consultant IA & conseil IA — agents sur-mesure pour agences digitales
+                Consultant IA & conseil IA, agents sur mesure pour agences digitales
               </p>
               <h1
                 className="heading-hero"
                 style={{ textShadow: '0 3px 18px rgba(0,0,0,0.65)' }}
               >
-                Votre agence est débordée — mais recruter n'est pas{" "}
+                Votre agence est débordée, mais recruter n'est pas{" "}
                 <em className="text-emphasis">la réponse</em>.
               </h1>
               <p
@@ -334,8 +334,8 @@ function Index() {
                 style={{ textShadow: '0 2px 14px rgba(0,0,0,0.65)' }}
               >
                 Vous perdez des heures sur la qualification de leads, le reporting client et
-                l'onboarding — pendant que vos concurrents automatisent déjà. J'implémente des
-                agents IA sur-mesure qui prennent en charge ces tâches, pour que votre équipe se
+                l'onboarding, pendant que vos concurrents automatisent déjà. J'implémente des
+                agents IA sur mesure qui prennent en charge ces tâches, pour que votre équipe se
                 concentre sur ce qui fait vraiment grandir l'agence.
               </p>
               <div className="mt-7">
@@ -345,7 +345,7 @@ function Index() {
                 className="mt-3 text-sm text-primary-foreground/90"
                 style={{ textShadow: '0 2px 10px rgba(0,0,0,0.55)' }}
               >
-                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+                45 minutes, sans engagement. Repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
           </div>
@@ -413,7 +413,7 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-center heading-section">
-                Des agents IA conçus pour votre agence digitale —{" "}
+                Des agents IA conçus pour votre agence digitale,{" "}
                 <em className="text-emphasis">pas un outil générique</em> de plus
               </h2>
             </Reveal>
