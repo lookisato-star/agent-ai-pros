@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Consultant IA freelance spécialisé conseil IA pour agences digitales en Europe. J'implémente des agents IA sur-mesure (prospection, reporting, onboarding) pour agences web, Ads et copywriting. Réservez un audit gratuit de 45 min.",
+          "Consultant IA freelance spécialisé conseil IA pour agences digitales en Europe. J'implémente des agents IA sur mesure (prospection, reporting, onboarding) pour agences web, Ads et copywriting. Réservez un audit gratuit de 45 min.",
       },
       {
         property: "og:title",
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur-mesure.",
+          "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur mesure.",
       },
       { property: "og:url", content: "https://agent-ai-pros.lovable.app/" },
       { property: "og:type", content: "website" },
@@ -102,7 +102,7 @@ const problemes = [
   {
     icon: "fa-regular fa-file-lines",
     title: "Le reporting est fait à l'arrache en fin de mois",
-    text: "Des exports copiés-collés à la main, tard le soir. Le client le sent, et la valeur perçue en pâtit.",
+    text: "Des exports copiés collés à la main, tard le soir. Le client le sent, et la valeur perçue en pâtit.",
   },
   {
     icon: "fa-regular fa-user",
@@ -142,12 +142,12 @@ const tools = [
   },
   {
     name: "Claude (Anthropic)",
-    text: "Le moteur IA derrière la qualification, la rédaction et la prise de décision de vos agents — précis, fiable, peu d'hallucinations.",
+    text: "Le moteur IA derrière la qualification, la rédaction et la prise de décision de vos agents. Précis, fiable, peu d'hallucinations.",
     icon: "fa-solid fa-brain",
   },
   {
     name: "Vos outils existants",
-    text: "CRM, formulaires, Ads, reporting — je connecte l'agent à ce que vous utilisez déjà, pas l'inverse.",
+    text: "CRM, formulaires, Ads, reporting. Je connecte l'agent à ce que vous utilisez déjà, pas l'inverse.",
     icon: "fa-solid fa-plug",
   },
 ];
@@ -181,7 +181,7 @@ const etapes = [
   {
     n: "02",
     icon: "fa-solid fa-file-signature",
-    title: "Proposition sur-mesure",
+    title: "Proposition sur mesure",
     text: "Un périmètre clair, un délai, un prix fixe. Aucun abonnement imposé, aucun outil générique.",
   },
   {
