@@ -294,15 +294,14 @@ function Index() {
           />
           <div className="pointer-events-none absolute inset-0" aria-hidden="true">
             {floatingIcons.map((icon, i) => (
-              <img
+              <i
                 key={i}
-                src={icon.src}
-                alt=""
-                className={`floating-icon absolute ${icon.className}`}
+                className={`floating-icon absolute text-primary-foreground/70 ${icon.icon} ${icon.className}`}
                 style={{ animationDelay: icon.delay }}
-                loading="lazy"
+                aria-hidden="true"
               />
             ))}
+
           </div>
           <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
             <Reveal>
