@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Consultant IA freelance spécialisé conseil IA pour agences digitales en Europe. J'implémente des agents IA sur-mesure (prospection, reporting, onboarding) pour agences web, Ads et copywriting. Réservez un audit gratuit de 45 min.",
+          "Consultant IA freelance spécialisé conseil IA pour agences digitales en Europe. J'implémente des agents IA sur mesure (prospection, reporting, onboarding) pour agences web, Ads et copywriting. Réservez un audit gratuit de 45 min.",
       },
       {
         property: "og:title",
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur-mesure.",
+          "Consultant IA freelance pour agences digitales européennes. Audit gratuit de 45 min pour identifier vos premiers agents sur mesure.",
       },
       { property: "og:url", content: "https://agent-ai-pros.lovable.app/" },
       { property: "og:type", content: "website" },
@@ -102,7 +102,7 @@ const problemes = [
   {
     icon: "fa-regular fa-file-lines",
     title: "Le reporting est fait à l'arrache en fin de mois",
-    text: "Des exports copiés-collés à la main, tard le soir. Le client le sent, et la valeur perçue en pâtit.",
+    text: "Des exports copiés collés à la main, tard le soir. Le client le sent, et la valeur perçue en pâtit.",
   },
   {
     icon: "fa-regular fa-user",
@@ -142,12 +142,12 @@ const tools = [
   },
   {
     name: "Claude (Anthropic)",
-    text: "Le moteur IA derrière la qualification, la rédaction et la prise de décision de vos agents — précis, fiable, peu d'hallucinations.",
+    text: "Le moteur IA derrière la qualification, la rédaction et la prise de décision de vos agents. Précis, fiable, peu d'hallucinations.",
     icon: "fa-solid fa-brain",
   },
   {
     name: "Vos outils existants",
-    text: "CRM, formulaires, Ads, reporting — je connecte l'agent à ce que vous utilisez déjà, pas l'inverse.",
+    text: "CRM, formulaires, Ads, reporting. Je connecte l'agent à ce que vous utilisez déjà, pas l'inverse.",
     icon: "fa-solid fa-plug",
   },
 ];
@@ -181,7 +181,7 @@ const etapes = [
   {
     n: "02",
     icon: "fa-solid fa-file-signature",
-    title: "Proposition sur-mesure",
+    title: "Proposition sur mesure",
     text: "Un périmètre clair, un délai, un prix fixe. Aucun abonnement imposé, aucun outil générique.",
   },
   {
@@ -320,13 +320,13 @@ function Index() {
             <Reveal>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
-                Consultant IA & conseil IA — agents sur-mesure pour agences digitales
+                Consultant IA & conseil IA, agents sur mesure pour agences digitales
               </p>
               <h1
                 className="heading-hero"
                 style={{ textShadow: '0 3px 18px rgba(0,0,0,0.65)' }}
               >
-                Votre agence est débordée — mais recruter n'est pas{" "}
+                Votre agence est débordée, mais recruter n'est pas{" "}
                 <em className="text-emphasis">la réponse</em>.
               </h1>
               <p
@@ -334,8 +334,8 @@ function Index() {
                 style={{ textShadow: '0 2px 14px rgba(0,0,0,0.65)' }}
               >
                 Vous perdez des heures sur la qualification de leads, le reporting client et
-                l'onboarding — pendant que vos concurrents automatisent déjà. J'implémente des
-                agents IA sur-mesure qui prennent en charge ces tâches, pour que votre équipe se
+                l'onboarding, pendant que vos concurrents automatisent déjà. J'implémente des
+                agents IA sur mesure qui prennent en charge ces tâches, pour que votre équipe se
                 concentre sur ce qui fait vraiment grandir l'agence.
               </p>
               <div className="mt-7">
@@ -345,7 +345,7 @@ function Index() {
                 className="mt-3 text-sm text-primary-foreground/90"
                 style={{ textShadow: '0 2px 10px rgba(0,0,0,0.55)' }}
               >
-                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+                45 minutes, sans engagement. Repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
           </div>
@@ -413,7 +413,7 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-center heading-section">
-                Des agents IA conçus pour votre agence digitale —{" "}
+                Des agents IA conçus pour votre agence digitale,{" "}
                 <em className="text-emphasis">pas un outil générique</em> de plus
               </h2>
             </Reveal>
@@ -470,7 +470,7 @@ function Index() {
           </div>
         </section>
 
-        {/* Crédibilité — Kenneth */}
+        {/* Crédibilité Kenneth */}
         <section className="px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
@@ -499,7 +499,7 @@ function Index() {
                       Mon approche part d'un constat simple : dans une agence, chaque heure passée sur une tâche répétitive (qualifier un lead, monter un reporting, relancer un onboarding) est une heure qui n'est pas vendue à un client, ou pas investie sur ce qui fait vraiment grandir l'agence.
                     </p>
                     <p>
-                      Je ne construis pas des automatisations pour le principe. Je pars de votre goulot d'étranglement — là où vous perdez du temps ou des opportunités — et je construis l'agent IA qui le résout, connecté à vos outils existants.
+                      Je ne construis pas des automatisations pour le principe. Je pars de votre goulot d'étranglement, là où vous perdez du temps ou des opportunités, et je construis l'agent IA qui le résout, connecté à vos outils existants.
                     </p>
                     <p className="text-foreground">
                       Résultat concret : des heures libérées pour vos équipes, des leads mieux qualifiés, un onboarding qui ne dépend plus d'une seule personne. Vous ne travaillez pas avec un prestataire technique de plus. Vous travaillez avec quelqu'un qui construit pour un seul objectif : que ça se voie sur votre capacité à facturer plus, sans embaucher plus.
@@ -524,7 +524,7 @@ function Index() {
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-body text-muted-foreground">
                 Cette démo montre comment un agent IA qualifie automatiquement une demande entrante
-                dans une agence digitale, l'enrichit et la crée dans votre CRM — sans intervention manuelle.
+                dans une agence digitale, l'enrichit et la crée dans votre CRM, sans intervention manuelle.
               </p>
             </Reveal>
             <Reveal delay={120}>
@@ -549,7 +549,7 @@ function Index() {
                 <Cta location="video" />
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+                45 minutes, sans engagement. Repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
           </div>
@@ -701,7 +701,7 @@ function Index() {
                 <Cta location="offre" />
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+                45 minutes, sans engagement. Repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
           </div>
@@ -716,8 +716,8 @@ function Index() {
             <Reveal>
               <p className="mx-auto mt-5 max-w-2xl text-center text-body text-muted-foreground">
                 Vous cherchez un conseil IA ou un consultant IA pour accompagner votre agence
-                digitale ? Je conçois et j'implémente des agents sur-mesure pour les agences web,
-                Ads et copywriting en Europe — directement dans vos outils existants.
+                digitale ? Je conçois et j'implémente des agents sur mesure pour les agences web,
+                Ads et copywriting en Europe, directement dans vos outils existants.
               </p>
             </Reveal>
             <Reveal>
@@ -738,7 +738,7 @@ function Index() {
               <p className="mx-auto mt-12 max-w-2xl text-center text-body">
                 Vous ne signez pas avec une agence de plus : vous travaillez directement avec le
                 consultant IA qui construit vos agents. Pas de couche commerciale, pas de junior
-                sur votre dossier — un interlocuteur unique, un périmètre clair, et des process qui
+                sur votre dossier. Un interlocuteur unique, un périmètre clair, et des process qui
                 restent chez vous.
               </p>
               <div className="mt-9 text-center">
