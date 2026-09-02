@@ -323,7 +323,7 @@ function AuditGratuit() {
               </Button>
 
               <p className="text-center text-xs text-muted-foreground">
-                En cliquant, vous serez redirigé vers WhatsApp avec un message pré-rempli. Il vous
+                En cliquant, vous serez redirigé vers WhatsApp avec un message prérempli. Il vous
                 suffira de l'envoyer.
               </p>
             </form>
