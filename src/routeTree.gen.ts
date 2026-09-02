@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AuditGratuitRouteImport } from './routes/audit-gratuit'
+import { Route as KennethRouteImport } from './routes/kenneth'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
@@ -22,6 +23,11 @@ const IndexRoute = IndexRouteImport.update({
 const AuditGratuitRoute = AuditGratuitRouteImport.update({
   id: '/audit-gratuit',
   path: '/audit-gratuit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KennethRoute = KennethRouteImport.update({
+  id: '/kenneth',
+  path: '/kenneth',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
@@ -38,12 +44,14 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/audit-gratuit': typeof AuditGratuitRoute
+  '/kenneth': typeof KennethRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/audit-gratuit': typeof AuditGratuitRoute
+  '/kenneth': typeof KennethRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog': typeof BlogIndexRoute
 }
@@ -51,20 +59,23 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/audit-gratuit': typeof AuditGratuitRoute
+  '/kenneth': typeof KennethRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/audit-gratuit' | '/blog/$slug' | '/blog/'
+  fullPaths: '/' | '/audit-gratuit' | '/kenneth' | '/blog/$slug' | '/blog/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/audit-gratuit' | '/blog/$slug' | '/blog'
-  id: '__root__' | '/' | '/audit-gratuit' | '/blog/$slug' | '/blog/'
+  to: '/' | '/audit-gratuit' | '/kenneth' | '/blog/$slug' | '/blog'
+  id:
+    '__root__' | '/' | '/audit-gratuit' | '/kenneth' | '/blog/$slug' | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuditGratuitRoute: typeof AuditGratuitRoute
+  KennethRoute: typeof KennethRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
@@ -83,6 +94,13 @@ declare module '@tanstack/react-router' {
       path: '/audit-gratuit'
       fullPath: '/audit-gratuit'
       preLoaderRoute: typeof AuditGratuitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kenneth': {
+      id: '/kenneth'
+      path: '/kenneth'
+      fullPath: '/kenneth'
+      preLoaderRoute: typeof KennethRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -105,6 +123,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuditGratuitRoute: AuditGratuitRoute,
+  KennethRoute: KennethRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
