@@ -276,14 +276,22 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <span className="font-display text-2xl text-primary sm:text-3xl">KENNETH PADONOU</span>
-          <Link
-            to={CTA_HREF}
-            className="cta-btn cta-btn-sm"
-            onClick={() => trackCtaClick("header")}
-          >
-            <span className="hidden sm:inline">{CTA_LABEL}</span>
-            <span className="sm:hidden">Audit gratuit</span>
-          </Link>
+          <nav className="flex items-center gap-4">
+            <Link
+              to="/blog"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              Articles
+            </Link>
+            <Link
+              to={CTA_HREF}
+              className="cta-btn cta-btn-sm"
+              onClick={() => trackCtaClick("header")}
+            >
+              <span className="hidden sm:inline">{CTA_LABEL}</span>
+              <span className="sm:hidden">Audit gratuit</span>
+            </Link>
+          </nav>
         </div>
       </header>
 
