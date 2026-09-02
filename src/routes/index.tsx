@@ -266,7 +266,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <span className="font-display text-2xl sm:text-3xl">KENNETH PADONOU</span>
+          <span className="font-display text-2xl text-primary sm:text-3xl">KENNETH PADONOU</span>
           <Link
             to={CTA_HREF}
             className="cta-btn cta-btn-sm"
@@ -377,21 +377,21 @@ function Index() {
         </section>
 
         {/* Agitation */}
-        <section className="bg-primary text-primary-foreground px-5 py-20">
+        <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <h2 className="text-4xl sm:text-5xl">Le coût de l'inaction se paie chaque mois</h2>
-              <p className="mt-6 text-base leading-relaxed sm:text-lg">
+              <h2 className="text-4xl text-primary sm:text-5xl">Le coût de l'inaction se paie chaque mois</h2>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
                 rapport bâclé fragilise une relation client que vous avez mis un an à construire.
               </p>
-              <p className="mt-4 text-base leading-relaxed sm:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Et tant que vos process vivent dans la tête d'une seule personne, votre agence
                 n'est pas une entreprise : c'est une dépendance. Pendant ce temps, les agences qui
                 ont automatisé livrent plus vite, avec une équipe plus petite.
               </p>
               <div className="mt-9">
-                <Cta className="cta-btn-white" location="agitation" />
+                <Cta location="agitation" />
               </div>
             </Reveal>
           </div>
@@ -409,7 +409,7 @@ function Index() {
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {solutions.map((s, i) => (
                 <Reveal key={s.title} delay={i * 100} as="article">
-                  <div className="h-full rounded-xl bg-secondary-bg p-7">
+                  <div className="h-full rounded-xl border border-border bg-card p-7 shadow-sm">
                     <i
                       className={`${s.icon} mb-5 block text-2xl text-primary`}
                       aria-hidden="true"
@@ -424,35 +424,35 @@ function Index() {
         </section>
 
         {/* Outils éprouvés */}
-        <section className="bg-foreground px-5 py-20 text-primary-foreground">
+        <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <Reveal>
               <h2 className="text-center text-4xl sm:text-5xl">
                 Des outils éprouvés pour votre conseil IA
               </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
+              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Chaque outil est choisi pour sa fiabilité en production chez les agences digitales, pas pour la tendance.
               </p>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               {tools.map((t, i) => (
                 <Reveal key={t.name} delay={i * 100} as="article">
-                  <div className="h-full rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-7 transition-colors hover:border-primary-foreground/20 hover:bg-primary-foreground/[0.07]">
-                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-foreground/10">
+                  <div className="h-full rounded-2xl border border-border bg-card p-7 shadow-sm transition-shadow hover:shadow-md">
+                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
                       {t.image ? (
                         <img src={t.image} alt="" className="h-8 w-8 object-contain" />
                       ) : (
-                        <i className={`${t.icon} text-xl text-primary-foreground`} aria-hidden="true" />
+                        <i className={`${t.icon} text-xl text-primary`} aria-hidden="true" />
                       )}
                     </div>
                     <h3 className="text-2xl leading-tight">{t.name}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">{t.text}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
             <Reveal>
-              <p className="mx-auto mt-12 max-w-2xl text-center text-base italic text-primary-foreground/70 sm:text-lg">
+              <p className="mx-auto mt-12 max-w-2xl text-center text-base italic text-muted-foreground sm:text-lg">
                 Le bon outil n'est jamais choisi pour la tendance. Il est choisi parce qu'il tient en production, chez vous.
               </p>
             </Reveal>
@@ -460,18 +460,18 @@ function Index() {
         </section>
 
         {/* Crédibilité — Kenneth */}
-        <section className="bg-foreground px-5 py-20 text-primary-foreground">
+        <section className="px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
               <Reveal animation="fadeInLeft">
-                <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 shadow-2xl md:max-w-none">
+                <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-card shadow-xl md:max-w-none">
                   <img
                     src={kennethPortrait.url}
                     alt="Kenneth Padonou, consultant freelance spécialisé en agents IA pour agences digitales"
                     className="h-full w-full object-cover"
                     loading="lazy"
                   />
-                  <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary-foreground/10" />
+                  <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/10" />
                 </div>
               </Reveal>
               <Reveal animation="fadeInRight" delay={120}>
@@ -479,7 +479,7 @@ function Index() {
                   <h2 className="text-3xl leading-tight sm:text-4xl md:text-5xl">
                     Je ne vends pas des agents IA. Je vends du temps récupéré et du CA débloqué.
                   </h2>
-                  <div className="mt-6 space-y-4 text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
+                  <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
                     <p>
                       Je suis Kenneth, consultant IA freelance spécialisé dans la création d'agents IA pour les agences digitales.
                     </p>
@@ -489,7 +489,7 @@ function Index() {
                     <p>
                       Je ne construis pas des automatisations pour le principe. Je pars de votre goulot d'étranglement — là où vous perdez du temps ou des opportunités — et je construis l'agent IA qui le résout, connecté à vos outils existants.
                     </p>
-                    <p className="text-primary-foreground">
+                    <p className="text-foreground">
                       Résultat concret : des heures libérées pour vos équipes, des leads mieux qualifiés, un onboarding qui ne dépend plus d'une seule personne. Vous ne travaillez pas avec un prestataire technique de plus. Vous travaillez avec quelqu'un qui construit pour un seul objectif : que ça se voie sur votre capacité à facturer plus, sans embaucher plus.
                     </p>
                   </div>
@@ -612,7 +612,7 @@ function Index() {
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               {cas.map((c, i) => (
                 <Reveal key={c.nom} delay={i * 100} as="article">
-                  <div className="h-full rounded-xl bg-secondary-bg p-7">
+                  <div className="h-full rounded-xl border border-border bg-card p-7 shadow-sm">
                     <h4 className="font-display text-3xl">{c.nom}</h4>
                     <dl className="mt-5 space-y-4 text-sm leading-relaxed">
                       <div>
@@ -645,7 +645,7 @@ function Index() {
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {garanties.map((g, i) => (
                 <Reveal key={g.title} delay={i * 100} as="article">
-                  <div className="flex h-full flex-col rounded-xl border border-foreground/10 bg-background/70 p-7">
+                  <div className="flex h-full flex-col rounded-xl border border-border bg-card p-7 shadow-sm">
                     <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                       <i className="fa-solid fa-check" aria-hidden="true" />
                     </div>
@@ -717,10 +717,10 @@ function Index() {
         </section>
       </main>
 
-      <footer className="bg-secondary-bg px-5 py-14">
+      <footer className="bg-background px-5 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
-            <p className="font-display text-3xl">KENNETH PADONOU</p>
+            <p className="font-display text-3xl text-primary">KENNETH PADONOU</p>
             <a
               href="mailto:contact@agents-ia.eu"
               className="mt-1 inline-flex items-center gap-2 text-sm text-muted-foreground underline underline-offset-4"
