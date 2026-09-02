@@ -50,6 +50,54 @@ export type Database = {
         }
         Relationships: []
       }
+      blog_posts: {
+        Row: {
+          content: string
+          cover_image_url: string | null
+          created_at: string
+          excerpt: string | null
+          id: string
+          linkedin_url: string | null
+          meta_description: string | null
+          meta_title: string | null
+          published_at: string
+          slug: string
+          status: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          content?: string
+          cover_image_url?: string | null
+          created_at?: string
+          excerpt?: string | null
+          id?: string
+          linkedin_url?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          published_at?: string
+          slug: string
+          status?: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          content?: string
+          cover_image_url?: string | null
+          created_at?: string
+          excerpt?: string | null
+          id?: string
+          linkedin_url?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          published_at?: string
+          slug?: string
+          status?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       cta_clicks: {
         Row: {
           created_at: string
@@ -74,6 +122,42 @@ export type Database = {
           path?: string
           referrer?: string | null
           user_agent?: string | null
+        }
+        Relationships: []
+      }
+      testimonials: {
+        Row: {
+          client_name: string
+          company: string | null
+          created_at: string
+          id: string
+          photo_url: string | null
+          quote: string
+          role: string | null
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          client_name: string
+          company?: string | null
+          created_at?: string
+          id?: string
+          photo_url?: string | null
+          quote: string
+          role?: string | null
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          client_name?: string
+          company?: string | null
+          created_at?: string
+          id?: string
+          photo_url?: string | null
+          quote?: string
+          role?: string | null
+          status?: string
+          updated_at?: string
         }
         Relationships: []
       }
