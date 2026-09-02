@@ -17,8 +17,9 @@
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
-  --font-display: "Bebas Neue", system-ui, sans-serif;
-  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Satoshi", system-ui, sans-serif;
+  --font-sans: "Satoshi", system-ui, sans-serif;
+  --font-emphasis: "Instrument Serif", Georgia, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -103,10 +104,9 @@
   h3,
   .font-display {
     font-family: var(--font-display);
-    text-transform: uppercase;
-    letter-spacing: 0.045em;
-    line-height: 0.95;
-    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    font-weight: 700;
   }
 
   :focus-visible {
@@ -119,7 +119,8 @@
 @utility heading-hero {
   font-size: 1.875rem; /* mobile: 30px */
   line-height: 1.05;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
+  font-weight: 900;
 
   @media (min-width: 640px) {
     font-size: 2.75rem; /* sm+: 44px */
@@ -133,7 +134,8 @@
 @utility heading-section {
   font-size: 1.5rem; /* mobile: 24px */
   line-height: 1.1;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.015em;
+  font-weight: 700;
 
   @media (min-width: 640px) {
     font-size: 2rem; /* sm+: 32px */
@@ -147,7 +149,8 @@
 @utility heading-card {
   font-size: 1rem; /* mobile: 16px */
   line-height: 1.2;
-  letter-spacing: 0.025em;
+  letter-spacing: -0.01em;
+  font-weight: 600;
 
   @media (min-width: 640px) {
     font-size: 1.125rem; /* sm+: 18px */
@@ -156,6 +159,14 @@
   @media (min-width: 1024px) {
     font-size: 1.25rem; /* lg+: 20px */
   }
+}
+
+/* Emphasis serif italic — Tiempos alternative (Instrument Serif), key words in big headings only */
+@utility text-emphasis {
+  font-family: var(--font-emphasis);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 @utility text-body {
@@ -184,7 +195,7 @@
   background-color: var(--color-primary);
   color: var(--color-primary-foreground);
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 0.5rem;
   padding: 0.9rem 1.6rem;
   font-size: 1rem;

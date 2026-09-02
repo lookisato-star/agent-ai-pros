@@ -175,7 +175,7 @@ function AuditGratuit() {
               Audit gratuit
             </p>
             <h1 className="mt-4 text-center heading-hero">
-              Réserver votre audit de 45 minutes avec un consultant IA
+              Réserver votre audit de <em className="text-emphasis">45 minutes</em> avec un consultant IA
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-center text-subtitle text-muted-foreground">
               Conseil IA personnalisé pour agence digitale : remplissez le formulaire ci-dessous.
