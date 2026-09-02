@@ -470,7 +470,7 @@ function Index() {
           </div>
         </section>
 
-        {/* Crédibilité — Kenneth */}
+        {/* Crédibilité Kenneth */}
         <section className="px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
@@ -499,7 +499,7 @@ function Index() {
                       Mon approche part d'un constat simple : dans une agence, chaque heure passée sur une tâche répétitive (qualifier un lead, monter un reporting, relancer un onboarding) est une heure qui n'est pas vendue à un client, ou pas investie sur ce qui fait vraiment grandir l'agence.
                     </p>
                     <p>
-                      Je ne construis pas des automatisations pour le principe. Je pars de votre goulot d'étranglement — là où vous perdez du temps ou des opportunités — et je construis l'agent IA qui le résout, connecté à vos outils existants.
+                      Je ne construis pas des automatisations pour le principe. Je pars de votre goulot d'étranglement, là où vous perdez du temps ou des opportunités, et je construis l'agent IA qui le résout, connecté à vos outils existants.
                     </p>
                     <p className="text-foreground">
                       Résultat concret : des heures libérées pour vos équipes, des leads mieux qualifiés, un onboarding qui ne dépend plus d'une seule personne. Vous ne travaillez pas avec un prestataire technique de plus. Vous travaillez avec quelqu'un qui construit pour un seul objectif : que ça se voie sur votre capacité à facturer plus, sans embaucher plus.
@@ -524,7 +524,7 @@ function Index() {
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-body text-muted-foreground">
                 Cette démo montre comment un agent IA qualifie automatiquement une demande entrante
-                dans une agence digitale, l'enrichit et la crée dans votre CRM — sans intervention manuelle.
+                dans une agence digitale, l'enrichit et la crée dans votre CRM, sans intervention manuelle.
               </p>
             </Reveal>
             <Reveal delay={120}>
@@ -549,7 +549,7 @@ function Index() {
                 <Cta location="video" />
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+                45 minutes, sans engagement. Repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
           </div>
@@ -701,7 +701,7 @@ function Index() {
                 <Cta location="offre" />
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
+                45 minutes, sans engagement. Repartez avec un plan d'automatisation concret.
               </p>
             </Reveal>
           </div>
@@ -716,8 +716,8 @@ function Index() {
             <Reveal>
               <p className="mx-auto mt-5 max-w-2xl text-center text-body text-muted-foreground">
                 Vous cherchez un conseil IA ou un consultant IA pour accompagner votre agence
-                digitale ? Je conçois et j'implémente des agents sur-mesure pour les agences web,
-                Ads et copywriting en Europe — directement dans vos outils existants.
+                digitale ? Je conçois et j'implémente des agents sur mesure pour les agences web,
+                Ads et copywriting en Europe, directement dans vos outils existants.
               </p>
             </Reveal>
             <Reveal>
@@ -738,7 +738,7 @@ function Index() {
               <p className="mx-auto mt-12 max-w-2xl text-center text-body">
                 Vous ne signez pas avec une agence de plus : vous travaillez directement avec le
                 consultant IA qui construit vos agents. Pas de couche commerciale, pas de junior
-                sur votre dossier — un interlocuteur unique, un périmètre clair, et des process qui
+                sur votre dossier. Un interlocuteur unique, un périmètre clair, et des process qui
                 restent chez vous.
               </p>
               <div className="mt-9 text-center">
