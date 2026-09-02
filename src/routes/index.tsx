@@ -460,18 +460,18 @@ function Index() {
         </section>
 
         {/* Crédibilité — Kenneth */}
-        <section className="bg-foreground px-5 py-20 text-primary-foreground">
+        <section className="px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
               <Reveal animation="fadeInLeft">
-                <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 shadow-2xl md:max-w-none">
+                <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-card shadow-xl md:max-w-none">
                   <img
                     src={kennethPortrait.url}
                     alt="Kenneth Padonou, consultant freelance spécialisé en agents IA pour agences digitales"
                     className="h-full w-full object-cover"
                     loading="lazy"
                   />
-                  <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary-foreground/10" />
+                  <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/10" />
                 </div>
               </Reveal>
               <Reveal animation="fadeInRight" delay={120}>
@@ -479,7 +479,7 @@ function Index() {
                   <h2 className="text-3xl leading-tight sm:text-4xl md:text-5xl">
                     Je ne vends pas des agents IA. Je vends du temps récupéré et du CA débloqué.
                   </h2>
-                  <div className="mt-6 space-y-4 text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
+                  <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
                     <p>
                       Je suis Kenneth, consultant IA freelance spécialisé dans la création d'agents IA pour les agences digitales.
                     </p>
