@@ -161,6 +161,14 @@
   }
 }
 
+/* Emphasis serif italic — Tiempos alternative (Instrument Serif), key words in big headings only */
+@utility text-emphasis {
+  font-family: var(--font-emphasis);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
 @utility text-body {
   font-size: 0.9375rem; /* mobile: 15px */
   line-height: 1.65;
