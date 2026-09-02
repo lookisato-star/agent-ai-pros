@@ -409,7 +409,7 @@ function Index() {
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {solutions.map((s, i) => (
                 <Reveal key={s.title} delay={i * 100} as="article">
-                  <div className="h-full rounded-xl bg-secondary-bg p-7">
+                  <div className="h-full rounded-xl border border-border bg-card p-7 shadow-sm">
                     <i
                       className={`${s.icon} mb-5 block text-2xl text-primary`}
                       aria-hidden="true"
@@ -612,7 +612,7 @@ function Index() {
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               {cas.map((c, i) => (
                 <Reveal key={c.nom} delay={i * 100} as="article">
-                  <div className="h-full rounded-xl bg-secondary-bg p-7">
+                  <div className="h-full rounded-xl border border-border bg-card p-7 shadow-sm">
                     <h4 className="font-display text-3xl">{c.nom}</h4>
                     <dl className="mt-5 space-y-4 text-sm leading-relaxed">
                       <div>
@@ -645,7 +645,7 @@ function Index() {
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {garanties.map((g, i) => (
                 <Reveal key={g.title} delay={i * 100} as="article">
-                  <div className="flex h-full flex-col rounded-xl border border-foreground/10 bg-background/70 p-7">
+                  <div className="flex h-full flex-col rounded-xl border border-border bg-card p-7 shadow-sm">
                     <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                       <i className="fa-solid fa-check" aria-hidden="true" />
                     </div>
