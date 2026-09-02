@@ -174,21 +174,25 @@ const transformation = [
 const etapes = [
   {
     n: "01",
+    icon: "fa-solid fa-magnifying-glass",
     title: "Audit gratuit",
     text: "45 minutes pour cartographier vos tâches répétitives et identifier les deux ou trois plus rentables à automatiser.",
   },
   {
     n: "02",
+    icon: "fa-solid fa-file-signature",
     title: "Proposition sur-mesure",
     text: "Un périmètre clair, un délai, un prix fixe. Aucun abonnement imposé, aucun outil générique.",
   },
   {
     n: "03",
+    icon: "fa-solid fa-screwdriver-wrench",
     title: "Implémentation",
     text: "Je construis l'agent dans votre stack existante et je le teste sur vos vrais dossiers avant mise en production.",
   },
   {
     n: "04",
+    icon: "fa-solid fa-life-ring",
     title: "Suivi",
     text: "30 jours d'ajustements inclus, avec formation de votre équipe pour que l'agent reste entre vos mains.",
   },
@@ -197,6 +201,7 @@ const etapes = [
 const cas = [
   {
     nom: "Big Chick",
+    icon: "fa-solid fa-drumstick-bite",
     defi: "Plus de 200 demandes entrantes par mois traitées manuellement par deux account managers.",
     solution:
       "Agent de qualification connecté au formulaire et au CRM, avec scoring sur budget, secteur et urgence.",
@@ -204,6 +209,7 @@ const cas = [
   },
   {
     nom: "RMS International Group",
+    icon: "fa-solid fa-globe",
     defi: "Reporting multi-pays reconstruit à la main pour 18 clients, cinq jours par mois.",
     solution:
       "Agent de consolidation Ads et analytics produisant un rapport commenté dans le ton de l'agence.",
@@ -213,14 +219,17 @@ const cas = [
 
 const garanties = [
   {
+    icon: "fa-solid fa-ban",
     title: "Pas d'abonnement forcé",
     text: "Vous payez le projet, pas un forfait mensuel obligatoire. Si vous voulez de la maintenance ensuite, c'est vous qui décidez.",
   },
   {
+    icon: "fa-solid fa-key",
     title: "Vous restez propriétaire du système",
     text: "Le workflow, les prompts, les automatisations : tout reste sur votre compte (Make, n8n, ou autre). Aucune dépendance cachée.",
   },
   {
+    icon: "fa-solid fa-sliders",
     title: "Ajustements inclus jusqu'à validation",
     text: "L'agent n'est pas figé à la livraison. On ajuste ensemble jusqu'à ce qu'il tourne exactement comme prévu.",
   },
@@ -596,7 +605,12 @@ function Index() {
                 <Reveal key={e.n} delay={i * 90} as="li">
                   <div className={`step-card step-card-${i + 1}`}>
                     <span className="step-card-pin" aria-hidden="true" />
-                    <span className="text-sm font-semibold text-muted-foreground">{e.n}</span>
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-bg text-primary">
+                        <i className={`${e.icon} text-base`} aria-hidden="true" />
+                      </span>
+                      <span className="text-sm font-semibold text-muted-foreground">{e.n}</span>
+                    </div>
                     <h3 className="mt-2 heading-card">{e.title}</h3>
                     <p className="mt-2 text-body text-muted-foreground">{e.text}</p>
                   </div>
@@ -605,7 +619,8 @@ function Index() {
             </ol>
             <Reveal>
               <p className="mt-14 text-center text-body italic text-muted-foreground">
-                → Prêt à être livré !
+                <i className="fa-solid fa-arrow-right-long mr-2" aria-hidden="true" />
+                Prêt à être livré !
               </p>
             </Reveal>
 
@@ -616,18 +631,32 @@ function Index() {
               {cas.map((c, i) => (
                 <Reveal key={c.nom} delay={i * 100} as="article">
                   <div className="h-full rounded-xl border border-border bg-card p-7 shadow-sm">
-                    <h4 className="heading-section">{c.nom}</h4>
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-11 w-11 items-center justify-center rounded-full bg-secondary-bg text-primary">
+                        <i className={`${c.icon} text-lg`} aria-hidden="true" />
+                      </span>
+                      <h4 className="heading-section">{c.nom}</h4>
+                    </div>
                     <dl className="mt-5 space-y-4 text-body">
                       <div>
-                        <dt className="font-semibold">Défi</dt>
+                        <dt className="font-semibold">
+                          <i className="fa-solid fa-triangle-exclamation mr-2 text-muted-foreground" aria-hidden="true" />
+                          Défi
+                        </dt>
                         <dd className="text-muted-foreground">{c.defi}</dd>
                       </div>
                       <div>
-                        <dt className="font-semibold">Solution</dt>
+                        <dt className="font-semibold">
+                          <i className="fa-solid fa-lightbulb mr-2 text-muted-foreground" aria-hidden="true" />
+                          Solution
+                        </dt>
                         <dd className="text-muted-foreground">{c.solution}</dd>
                       </div>
                       <div>
-                        <dt className="font-semibold text-primary">Impact</dt>
+                        <dt className="font-semibold text-primary">
+                          <i className="fa-solid fa-arrow-trend-up mr-2" aria-hidden="true" />
+                          Impact
+                        </dt>
                         <dd className="text-muted-foreground">{c.impact}</dd>
                       </div>
                     </dl>
@@ -650,7 +679,7 @@ function Index() {
                 <Reveal key={g.title} delay={i * 100} as="article">
                   <div className="flex h-full flex-col rounded-xl border border-border bg-card p-7 shadow-sm">
                     <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                      <i className="fa-solid fa-check" aria-hidden="true" />
+                      <i className={g.icon} aria-hidden="true" />
                     </div>
                     <h3 className="heading-card">{g.title}</h3>
                     <p className="mt-3 text-body text-muted-foreground">{g.text}</p>
