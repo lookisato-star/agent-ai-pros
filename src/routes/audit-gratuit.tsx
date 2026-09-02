@@ -174,10 +174,10 @@ function AuditGratuit() {
             <p className="mx-auto w-fit rounded-full border border-foreground/20 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
               Audit gratuit
             </p>
-            <h1 className="mt-4 text-center text-4xl sm:text-5xl md:text-6xl">
+            <h1 className="mt-4 text-center heading-hero">
               Réserver votre audit de 45 minutes avec un consultant IA
             </h1>
-            <p className="mx-auto mt-5 max-w-xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mx-auto mt-5 max-w-xl text-center text-subtitle text-muted-foreground">
               Conseil IA personnalisé pour agence digitale : remplissez le formulaire ci-dessous.
               Votre demande sera envoyée directement sur WhatsApp. Je vous réponds sous 24 heures ouvrées.
             </p>
