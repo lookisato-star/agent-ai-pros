@@ -16,30 +16,27 @@ import kennethPortrait from "@/assets/kenneth-portrait.jpg.asset.json";
 
 const floatingIcons = [
   {
-    src: iconZapier.url,
-    alt: "Zapier",
-    className: "left-[4%] top-[16%] w-14 sm:w-20 md:w-24",
+    icon: "fa-solid fa-robot",
+    className: "left-[4%] top-[16%] text-4xl sm:text-6xl md:text-7xl",
     delay: "0s",
   },
   {
-    src: iconMake.url,
-    alt: "Make",
-    className: "right-[5%] top-[12%] w-16 sm:w-24 md:w-28",
+    icon: "fa-solid fa-diagram-project",
+    className: "right-[5%] top-[12%] text-4xl sm:text-6xl md:text-7xl",
     delay: "1.2s",
   },
   {
-    src: iconN8n.url,
-    alt: "n8n",
-    className: "right-[8%] bottom-[12%] w-12 sm:w-18 md:w-22",
+    icon: "fa-solid fa-gears",
+    className: "right-[8%] bottom-[12%] text-3xl sm:text-5xl md:text-6xl",
     delay: "2.1s",
   },
   {
-    src: iconZapier.url,
-    alt: "",
-    className: "left-[8%] bottom-[14%] w-11 sm:w-16 md:w-20 opacity-80",
+    icon: "fa-solid fa-bolt",
+    className: "left-[8%] bottom-[14%] text-3xl sm:text-5xl md:text-6xl opacity-80",
     delay: "0.6s",
   },
 ];
+
 
 const CTA_LABEL = "Réserver un audit gratuit";
 const CTA_HREF = "/audit-gratuit";
