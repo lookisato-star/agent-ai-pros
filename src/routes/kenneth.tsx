@@ -350,7 +350,7 @@ function PostsSection() {
             />
           </div>
           <div>
-            <label className={labelClass}>Lien source LinkedIn</label>
+            <label className={labelClass}>Lien source LinkedIn (optionnel)</label>
             <input
               className={inputClass}
               value={form.linkedin_url}
