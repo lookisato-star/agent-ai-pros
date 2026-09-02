@@ -280,7 +280,7 @@ function Index() {
 
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden px-5 py-24 sm:py-32">
+        <section className="relative flex min-h-[calc(100vh-3.5rem)] items-center overflow-hidden px-5 py-16 sm:py-20">
           <img
             src={heroHorizon.url}
             alt=""
@@ -309,18 +309,18 @@ function Index() {
           </div>
           <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
             <Reveal>
-              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
+              <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
                 Consultant IA & conseil IA — agents sur-mesure pour agences digitales
               </p>
               <h1
-                className="text-5xl sm:text-6xl md:text-7xl"
+                className="heading-hero"
                 style={{ textShadow: '0 3px 18px rgba(0,0,0,0.65)' }}
               >
                 Votre agence est débordée — mais recruter n'est pas la réponse.
               </h1>
               <p
-                className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-primary-foreground sm:text-lg"
+                className="mx-auto mt-5 max-w-2xl text-subtitle text-primary-foreground"
                 style={{ textShadow: '0 2px 14px rgba(0,0,0,0.65)' }}
               >
                 Vous perdez des heures sur la qualification de leads, le reporting client et
@@ -328,11 +328,11 @@ function Index() {
                 agents IA sur-mesure qui prennent en charge ces tâches, pour que votre équipe se
                 concentre sur ce qui fait vraiment grandir l'agence.
               </p>
-              <div className="mt-9">
+              <div className="mt-7">
                 <Cta className="cta-btn-light" location="hero" />
               </div>
               <p
-                className="mt-4 text-sm text-primary-foreground/90"
+                className="mt-3 text-sm text-primary-foreground/90"
                 style={{ textShadow: '0 2px 10px rgba(0,0,0,0.55)' }}
               >
                 45 minutes, sans engagement — repartez avec un plan d'automatisation concret.
@@ -345,7 +345,7 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
-              <h2 className="max-w-2xl text-4xl sm:text-5xl">
+              <h2 className="max-w-2xl heading-section">
                 Ce que j'entends dans presque chaque agence digitale
               </h2>
             </Reveal>
@@ -362,14 +362,14 @@ function Index() {
                       className={`${p.icon} mb-5 block text-2xl text-primary`}
                       aria-hidden="true"
                     />
-                    <h3 className="text-2xl leading-tight">{p.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.text}</p>
+                    <h3 className="heading-card">{p.title}</h3>
+                    <p className="mt-3 text-body text-muted-foreground">{p.text}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
             <Reveal>
-              <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mx-auto mt-12 max-w-2xl text-center text-body text-muted-foreground">
                 Ces problèmes ralentissent votre productivité et vous détournent du plus important : délivrer de la valeur.
               </p>
             </Reveal>
@@ -380,12 +380,12 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <h2 className="text-4xl text-primary sm:text-5xl">Le coût de l'inaction se paie chaque mois</h2>
-              <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <h2 className="heading-section text-primary">Le coût de l'inaction se paie chaque mois</h2>
+              <p className="mt-6 text-body text-muted-foreground">
                 Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
                 rapport bâclé fragilise une relation client que vous avez mis un an à construire.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mt-4 text-body text-muted-foreground">
                 Et tant que vos process vivent dans la tête d'une seule personne, votre agence
                 n'est pas une entreprise : c'est une dépendance. Pendant ce temps, les agences qui
                 ont automatisé livrent plus vite, avec une équipe plus petite.
@@ -401,7 +401,7 @@ function Index() {
         <section className="px-5 py-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
-              <h2 className="mx-auto max-w-3xl text-center text-4xl sm:text-5xl">
+              <h2 className="mx-auto max-w-3xl text-center heading-section">
                 Des agents IA conçus pour votre agence digitale — pas un outil générique de
                 plus
               </h2>
@@ -414,8 +414,8 @@ function Index() {
                       className={`${s.icon} mb-5 block text-2xl text-primary`}
                       aria-hidden="true"
                     />
-                    <h3 className="text-2xl leading-tight">{s.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
+                    <h3 className="heading-card">{s.title}</h3>
+                    <p className="mt-3 text-body text-muted-foreground">{s.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -427,10 +427,10 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">
+              <h2 className="text-center heading-section">
                 Des outils éprouvés pour votre conseil IA
               </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mx-auto mt-5 max-w-2xl text-center text-body text-muted-foreground">
                 Chaque outil est choisi pour sa fiabilité en production chez les agences digitales, pas pour la tendance.
               </p>
             </Reveal>
@@ -445,14 +445,14 @@ function Index() {
                         <i className={`${t.icon} text-xl text-primary`} aria-hidden="true" />
                       )}
                     </div>
-                    <h3 className="text-2xl leading-tight">{t.name}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
+                    <h3 className="heading-card">{t.name}</h3>
+                    <p className="mt-3 text-body text-muted-foreground">{t.text}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
             <Reveal>
-              <p className="mx-auto mt-12 max-w-2xl text-center text-base italic text-muted-foreground sm:text-lg">
+              <p className="mx-auto mt-12 max-w-2xl text-center text-body italic text-muted-foreground">
                 Le bon outil n'est jamais choisi pour la tendance. Il est choisi parce qu'il tient en production, chez vous.
               </p>
             </Reveal>
@@ -476,10 +476,10 @@ function Index() {
               </Reveal>
               <Reveal animation="fadeInRight" delay={120}>
                 <div>
-                  <h2 className="text-3xl leading-tight sm:text-4xl md:text-5xl">
+                  <h2 className="heading-section">
                     Je ne vends pas des agents IA. Je vends du temps récupéré et du CA débloqué.
                   </h2>
-                  <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                  <div className="mt-6 space-y-4 text-body text-muted-foreground">
                     <p>
                       Je suis Kenneth, consultant IA freelance spécialisé dans la création d'agents IA pour les agences digitales.
                     </p>
@@ -507,10 +507,10 @@ function Index() {
               <p className="mx-auto w-fit rounded-full border border-foreground/20 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
                 Voir un agent en action
               </p>
-              <h2 className="mt-4 text-4xl sm:text-5xl">
+              <h2 className="mt-4 heading-section">
                 Un agent IA qui travaille pendant que vous dormez
               </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mx-auto mt-5 max-w-2xl text-body text-muted-foreground">
                 Cette démo montre comment un agent IA qualifie automatiquement une demande entrante
                 dans une agence digitale, l'enrichit et la crée dans votre CRM — sans intervention manuelle.
               </p>
@@ -547,19 +547,19 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">Avant / Après</h2>
+              <h2 className="text-center heading-section">Avant / Après</h2>
             </Reveal>
             <div className="glass-card mt-10 overflow-hidden">
               <div className="grid grid-cols-2 border-b border-foreground/10 bg-white/10">
-                <div className="px-5 py-3 font-display text-xl">Aujourd'hui</div>
-                <div className="border-l border-foreground/10 px-5 py-3 font-display text-xl">
+                <div className="px-5 py-3 heading-card font-display">Aujourd'hui</div>
+                <div className="border-l border-foreground/10 px-5 py-3 heading-card font-display">
                   Avec un agent IA
                 </div>
               </div>
               {transformation.map((row, i) => (
                 <Reveal key={row.avant[0]} delay={i * 80}>
                   <div className="grid grid-cols-2 border-t border-foreground/10 bg-white/5">
-                    <div className="px-5 py-5 text-sm leading-relaxed text-muted-foreground">
+                    <div className="px-5 py-5 text-body text-muted-foreground">
                       <i
                         className="fa-solid fa-xmark mr-2 text-muted-foreground/60"
                         aria-hidden="true"
@@ -567,7 +567,7 @@ function Index() {
                       <strong className="font-semibold">{row.avant[0]}</strong>
                       {row.avant[1]}
                     </div>
-                    <div className="border-l border-foreground/10 px-5 py-5 text-sm leading-relaxed">
+                    <div className="border-l border-foreground/10 px-5 py-5 text-body">
                       <i className="fa-solid fa-check mr-2 text-primary" aria-hidden="true" />
                       <strong className="font-semibold">{row.apres[0]}</strong>
                       {row.apres[1]}
@@ -586,7 +586,7 @@ function Index() {
               <p className="mx-auto w-fit rounded-full border border-foreground/20 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
                 Ma démarche
               </p>
-              <h2 className="mt-4 text-center text-4xl sm:text-5xl">Comment on avance ensemble, consultant IA et agence digitale</h2>
+              <h2 className="mt-4 text-center heading-section">Comment on avance ensemble, consultant IA et agence digitale</h2>
             </Reveal>
             <ol className="steps-board mt-14 grid gap-10 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-14">
               {etapes.map((e, i) => (
@@ -594,27 +594,27 @@ function Index() {
                   <div className={`step-card step-card-${i + 1}`}>
                     <span className="step-card-pin" aria-hidden="true" />
                     <span className="text-sm font-semibold text-muted-foreground">{e.n}</span>
-                    <h3 className="mt-2 text-2xl leading-tight">{e.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.text}</p>
+                    <h3 className="mt-2 heading-card">{e.title}</h3>
+                    <p className="mt-2 text-body text-muted-foreground">{e.text}</p>
                   </div>
                 </Reveal>
               ))}
             </ol>
             <Reveal>
-              <p className="mt-14 text-center text-lg italic text-muted-foreground">
+              <p className="mt-14 text-center text-body italic text-muted-foreground">
                 → Prêt à être livré !
               </p>
             </Reveal>
 
             <Reveal>
-              <h3 className="mt-20 text-center text-3xl sm:text-4xl">Cas concrets</h3>
+              <h3 className="mt-20 text-center heading-section">Cas concrets</h3>
             </Reveal>
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               {cas.map((c, i) => (
                 <Reveal key={c.nom} delay={i * 100} as="article">
                   <div className="h-full rounded-xl border border-border bg-card p-7 shadow-sm">
-                    <h4 className="font-display text-3xl">{c.nom}</h4>
-                    <dl className="mt-5 space-y-4 text-sm leading-relaxed">
+                    <h4 className="heading-section">{c.nom}</h4>
+                    <dl className="mt-5 space-y-4 text-body">
                       <div>
                         <dt className="font-semibold">Défi</dt>
                         <dd className="text-muted-foreground">{c.defi}</dd>
@@ -640,7 +640,7 @@ function Index() {
         <section className="bg-reassurance-bg px-5 py-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">Ce que je vous garantis, concrètement, en tant qu'agence digitale</h2>
+              <h2 className="text-center heading-section">Ce que je vous garantis, concrètement, en tant qu'agence digitale</h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {garanties.map((g, i) => (
@@ -649,8 +649,8 @@ function Index() {
                     <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                       <i className="fa-solid fa-check" aria-hidden="true" />
                     </div>
-                    <h3 className="text-2xl leading-tight">{g.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{g.text}</p>
+                    <h3 className="heading-card">{g.title}</h3>
+                    <p className="mt-3 text-body text-muted-foreground">{g.text}</p>
                   </div>
                 </Reveal>
               ))}
@@ -662,7 +662,7 @@ function Index() {
         <section className="bg-background px-5 py-16">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-subtitle text-muted-foreground">
                 Vous avez un process qui mérite d'être automatisé ?
               </p>
               <div className="mt-6">
@@ -679,10 +679,10 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl">
             <Reveal>
-              <h2 className="text-center text-4xl sm:text-5xl">Conseil IA & consultant IA</h2>
+              <h2 className="text-center heading-section">Conseil IA & consultant IA</h2>
             </Reveal>
             <Reveal>
-              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+              <p className="mx-auto mt-5 max-w-2xl text-center text-body text-muted-foreground">
                 Vous cherchez un conseil IA ou un consultant IA pour accompagner votre agence
                 digitale ? Je conçois et j'implémente des agents sur-mesure pour les agences web,
                 Ads et copywriting en Europe — directement dans vos outils existants.
@@ -692,10 +692,10 @@ function Index() {
               <Accordion type="single" collapsible className="mt-10">
                 {faq.map((f) => (
                   <AccordionItem key={f.q} value={f.q} className="border-foreground/10">
-                    <AccordionTrigger className="text-left font-sans text-base font-medium normal-case tracking-normal">
+                    <AccordionTrigger className="text-left font-sans text-body font-medium normal-case tracking-normal">
                       {f.q}
                     </AccordionTrigger>
-                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                    <AccordionContent className="text-body text-muted-foreground">
                       {f.a}
                     </AccordionContent>
                   </AccordionItem>
@@ -703,7 +703,7 @@ function Index() {
               </Accordion>
             </Reveal>
             <Reveal>
-              <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed">
+              <p className="mx-auto mt-12 max-w-2xl text-center text-body">
                 Vous ne signez pas avec une agence de plus : vous travaillez directement avec le
                 consultant IA qui construit vos agents. Pas de couche commerciale, pas de junior
                 sur votre dossier — un interlocuteur unique, un périmètre clair, et des process qui

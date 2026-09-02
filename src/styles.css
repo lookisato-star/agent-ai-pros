@@ -115,6 +115,67 @@
   }
 }
 
+/* French-friendly type scale — shorter line-height and sizes adapted to longer copy */
+@utility heading-hero {
+  font-size: 1.875rem; /* mobile: 30px */
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+
+  @media (min-width: 640px) {
+    font-size: 2.75rem; /* sm+: 44px */
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3.25rem; /* lg+: 52px */
+  }
+}
+
+@utility heading-section {
+  font-size: 1.5rem; /* mobile: 24px */
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+
+  @media (min-width: 640px) {
+    font-size: 2rem; /* sm+: 32px */
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2.25rem; /* lg+: 36px */
+  }
+}
+
+@utility heading-card {
+  font-size: 1rem; /* mobile: 16px */
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+
+  @media (min-width: 640px) {
+    font-size: 1.125rem; /* sm+: 18px */
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.25rem; /* lg+: 20px */
+  }
+}
+
+@utility text-body {
+  font-size: 0.9375rem; /* mobile: 15px */
+  line-height: 1.65;
+
+  @media (min-width: 640px) {
+    font-size: 1rem; /* sm+: 16px */
+  }
+}
+
+@utility text-subtitle {
+  font-size: 1rem; /* mobile: 16px */
+  line-height: 1.6;
+
+  @media (min-width: 640px) {
+    font-size: 1.125rem; /* sm+: 18px */
+  }
+}
+
 @utility cta-btn {
   display: inline-flex;
   align-items: center;
