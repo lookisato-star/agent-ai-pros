@@ -381,17 +381,17 @@ function Index() {
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <h2 className="text-4xl text-primary sm:text-5xl">Le coût de l'inaction se paie chaque mois</h2>
-              <p className="mt-6 text-base leading-relaxed sm:text-lg">
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
                 rapport bâclé fragilise une relation client que vous avez mis un an à construire.
               </p>
-              <p className="mt-4 text-base leading-relaxed sm:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Et tant que vos process vivent dans la tête d'une seule personne, votre agence
                 n'est pas une entreprise : c'est une dépendance. Pendant ce temps, les agences qui
                 ont automatisé livrent plus vite, avec une équipe plus petite.
               </p>
               <div className="mt-9">
-                <Cta className="cta-btn-white" location="agitation" />
+                <Cta location="agitation" />
               </div>
             </Reveal>
           </div>
@@ -424,35 +424,35 @@ function Index() {
         </section>
 
         {/* Outils éprouvés */}
-        <section className="bg-foreground px-5 py-20 text-primary-foreground">
+        <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-5xl">
             <Reveal>
               <h2 className="text-center text-4xl sm:text-5xl">
                 Des outils éprouvés pour votre conseil IA
               </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
+              <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Chaque outil est choisi pour sa fiabilité en production chez les agences digitales, pas pour la tendance.
               </p>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               {tools.map((t, i) => (
                 <Reveal key={t.name} delay={i * 100} as="article">
-                  <div className="h-full rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-7 transition-colors hover:border-primary-foreground/20 hover:bg-primary-foreground/[0.07]">
-                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-foreground/10">
+                  <div className="h-full rounded-2xl border border-border bg-card p-7 shadow-sm transition-shadow hover:shadow-md">
+                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
                       {t.image ? (
                         <img src={t.image} alt="" className="h-8 w-8 object-contain" />
                       ) : (
-                        <i className={`${t.icon} text-xl text-primary-foreground`} aria-hidden="true" />
+                        <i className={`${t.icon} text-xl text-primary`} aria-hidden="true" />
                       )}
                     </div>
                     <h3 className="text-2xl leading-tight">{t.name}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">{t.text}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
             <Reveal>
-              <p className="mx-auto mt-12 max-w-2xl text-center text-base italic text-primary-foreground/70 sm:text-lg">
+              <p className="mx-auto mt-12 max-w-2xl text-center text-base italic text-muted-foreground sm:text-lg">
                 Le bon outil n'est jamais choisi pour la tendance. Il est choisi parce qu'il tient en production, chez vous.
               </p>
             </Reveal>
