@@ -266,7 +266,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <span className="font-display text-2xl sm:text-3xl">KENNETH PADONOU</span>
+          <span className="font-display text-2xl text-primary sm:text-3xl">KENNETH PADONOU</span>
           <Link
             to={CTA_HREF}
             className="cta-btn cta-btn-sm"
@@ -717,10 +717,10 @@ function Index() {
         </section>
       </main>
 
-      <footer className="bg-secondary-bg px-5 py-14">
+      <footer className="bg-background px-5 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
-            <p className="font-display text-3xl">KENNETH PADONOU</p>
+            <p className="font-display text-3xl text-primary">KENNETH PADONOU</p>
             <a
               href="mailto:contact@agents-ia.eu"
               className="mt-1 inline-flex items-center gap-2 text-sm text-muted-foreground underline underline-offset-4"

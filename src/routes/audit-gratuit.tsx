@@ -156,7 +156,7 @@ function AuditGratuit() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <Link to="/" className="font-display text-2xl sm:text-3xl">
+          <Link to="/" className="font-display text-2xl text-primary sm:text-3xl">
             KENNETH PADONOU
           </Link>
           <a
@@ -186,7 +186,7 @@ function AuditGratuit() {
           <Reveal delay={150}>
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="mt-12 space-y-6 rounded-2xl border border-foreground/10 bg-secondary-bg p-6 sm:p-10"
+              className="mt-12 space-y-6 rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-10"
               noValidate
             >
               <div className="grid gap-6 sm:grid-cols-2">
@@ -343,9 +343,9 @@ function AuditGratuit() {
         </div>
       </main>
 
-      <footer className="bg-secondary-bg px-5 py-10">
+      <footer className="bg-background px-5 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
-          <p className="font-display text-2xl">KENNETH PADONOU</p>
+          <p className="font-display text-2xl text-primary">KENNETH PADONOU</p>
           <p className="text-sm text-muted-foreground">
             Consultant freelance en agents IA pour agences digitales européennes.
           </p>
