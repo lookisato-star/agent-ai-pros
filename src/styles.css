@@ -51,39 +51,39 @@
 :root {
   --radius: 0.5rem;
 
-  --background: #FAF8F5;
-  --secondary-bg: #F1ECEF;
-  --foreground: #211A24;
-  --muted-foreground: #6F6672;
+  --background: #F8F6F8;
+  --secondary-bg: #EEEBF0;
+  --foreground: #221528;
+  --muted-foreground: #7A6284;
 
-  --card: #F1ECEF;
-  --card-foreground: #211A24;
-  --popover: #F1ECEF;
-  --popover-foreground: #211A24;
+  --card: #FFFFFF;
+  --card-foreground: #221528;
+  --popover: #FFFFFF;
+  --popover-foreground: #221528;
 
-  --primary: #462255;
-  --primary-foreground: #FAF8F5;
-  --primary-hover: #32183D;
+  --primary: #381B44;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #873FA6;
 
-  --secondary: #F1ECEF;
-  --secondary-foreground: #211A24;
-  --muted: #F1ECEF;
-  --accent: #F1ECEF;
-  --accent-foreground: #211A24;
+  --secondary: #EEEBF0;
+  --secondary-foreground: #221528;
+  --muted: #EEEBF0;
+  --accent: #EEEBF0;
+  --accent-foreground: #221528;
 
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: #FAF8F5;
-  --border: color-mix(in srgb, var(--foreground) 12%, transparent);
-  --input: color-mix(in srgb, var(--foreground) 20%, transparent);
-  --ring: #462255;
+  --destructive-foreground: #FFFFFF;
+  --border: #E3DBE6;
+  --input: #E3DBE6;
+  --ring: #381B44;
 
   /* Legacy aliases kept for compatibility */
   --light-blue: #C7E0EB;
   --olive: oklch(0.79 0.062 118.5);
   --olive-light: oklch(0.845 0.055 116.5);
   --olive-dark: oklch(0.655 0.06 118);
-  --cream: #FAF8F5;
-  --reassurance-bg: #EEF5F8;
+  --cream: #F8F6F8;
+  --reassurance-bg: #EEEBF0;
 }
 
 @layer base {

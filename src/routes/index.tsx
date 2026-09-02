@@ -377,10 +377,10 @@ function Index() {
         </section>
 
         {/* Agitation */}
-        <section className="bg-primary text-primary-foreground px-5 py-20">
+        <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <h2 className="text-4xl sm:text-5xl">Le coût de l'inaction se paie chaque mois</h2>
+              <h2 className="text-4xl text-primary sm:text-5xl">Le coût de l'inaction se paie chaque mois</h2>
               <p className="mt-6 text-base leading-relaxed sm:text-lg">
                 Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
                 rapport bâclé fragilise une relation client que vous avez mis un an à construire.
