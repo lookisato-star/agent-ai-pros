@@ -8,7 +8,7 @@ import {
 import { Reveal } from "@/components/Reveal";
 import { trackCtaClick } from "@/lib/track";
 import heroHorizon from "@/assets/hero-horizon.jpg.asset.json";
-
+import iconZapier from "@/assets/icon-zapier.png.asset.json";
 import iconN8n from "@/assets/icon-n8n.png.asset.json";
 import iconMake from "@/assets/icon-make.png.asset.json";
 import agentDemo from "@/assets/agent-ia-demo.mp4.asset.json";
@@ -16,27 +16,30 @@ import kennethPortrait from "@/assets/kenneth-portrait.jpg.asset.json";
 
 const floatingIcons = [
   {
-    icon: "fa-solid fa-robot",
-    className: "left-[4%] top-[16%] text-4xl sm:text-6xl md:text-7xl",
+    src: iconZapier.url,
+    alt: "Zapier",
+    className: "left-[4%] top-[16%] w-14 sm:w-20 md:w-24",
     delay: "0s",
   },
   {
-    icon: "fa-solid fa-diagram-project",
-    className: "right-[5%] top-[12%] text-4xl sm:text-6xl md:text-7xl",
+    src: iconMake.url,
+    alt: "Make",
+    className: "right-[5%] top-[12%] w-16 sm:w-24 md:w-28",
     delay: "1.2s",
   },
   {
-    icon: "fa-solid fa-gears",
-    className: "right-[8%] bottom-[12%] text-3xl sm:text-5xl md:text-6xl",
+    src: iconN8n.url,
+    alt: "n8n",
+    className: "right-[8%] bottom-[12%] w-12 sm:w-18 md:w-22",
     delay: "2.1s",
   },
   {
-    icon: "fa-solid fa-bolt",
-    className: "left-[8%] bottom-[14%] text-3xl sm:text-5xl md:text-6xl opacity-80",
+    src: iconZapier.url,
+    alt: "",
+    className: "left-[8%] bottom-[14%] w-11 sm:w-16 md:w-20 opacity-80",
     delay: "0.6s",
   },
 ];
-
 
 const CTA_LABEL = "Réserver un audit gratuit";
 const CTA_HREF = "/audit-gratuit";
@@ -294,14 +297,15 @@ function Index() {
           />
           <div className="pointer-events-none absolute inset-0" aria-hidden="true">
             {floatingIcons.map((icon, i) => (
-              <i
+              <img
                 key={i}
-                className={`floating-icon absolute text-primary-foreground/70 ${icon.icon} ${icon.className}`}
+                src={icon.src}
+                alt=""
+                className={`floating-icon absolute ${icon.className}`}
                 style={{ animationDelay: icon.delay }}
-                aria-hidden="true"
+                loading="lazy"
               />
             ))}
-
           </div>
           <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
             <Reveal>
