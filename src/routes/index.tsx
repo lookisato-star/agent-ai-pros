@@ -489,7 +489,7 @@ function Index() {
                     <p>
                       Je ne construis pas des automatisations pour le principe. Je pars de votre goulot d'étranglement — là où vous perdez du temps ou des opportunités — et je construis l'agent IA qui le résout, connecté à vos outils existants.
                     </p>
-                    <p className="text-primary-foreground">
+                    <p className="text-foreground">
                       Résultat concret : des heures libérées pour vos équipes, des leads mieux qualifiés, un onboarding qui ne dépend plus d'une seule personne. Vous ne travaillez pas avec un prestataire technique de plus. Vous travaillez avec quelqu'un qui construit pour un seul objectif : que ça se voie sur votre capacité à facturer plus, sans embaucher plus.
                     </p>
                   </div>
