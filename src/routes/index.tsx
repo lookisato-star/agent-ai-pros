@@ -317,7 +317,8 @@ function Index() {
                 className="heading-hero"
                 style={{ textShadow: '0 3px 18px rgba(0,0,0,0.65)' }}
               >
-                Votre agence est débordée — mais recruter n'est pas la réponse.
+                Votre agence est débordée — mais recruter n'est pas{" "}
+                <em className="text-emphasis">la réponse</em>.
               </h1>
               <p
                 className="mx-auto mt-5 max-w-2xl text-subtitle text-primary-foreground"
@@ -346,7 +347,8 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="max-w-2xl heading-section">
-                Ce que j'entends dans presque chaque agence digitale
+                Ce que j'entends dans{" "}
+                <em className="text-emphasis">presque chaque</em> agence digitale
               </h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -380,7 +382,7 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <h2 className="heading-section text-primary">Le coût de l'inaction se paie chaque mois</h2>
+              <h2 className="heading-section text-primary">Le coût de <em className="text-emphasis">l'inaction</em> se paie chaque mois</h2>
               <p className="mt-6 text-body text-muted-foreground">
                 Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
                 rapport bâclé fragilise une relation client que vous avez mis un an à construire.
@@ -402,8 +404,8 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-center heading-section">
-                Des agents IA conçus pour votre agence digitale — pas un outil générique de
-                plus
+                Des agents IA conçus pour votre agence digitale —{" "}
+                <em className="text-emphasis">pas un outil générique</em> de plus
               </h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -428,7 +430,7 @@ function Index() {
           <div className="mx-auto max-w-5xl">
             <Reveal>
               <h2 className="text-center heading-section">
-                Des outils éprouvés pour votre conseil IA
+                Des outils <em className="text-emphasis">éprouvés</em> pour votre conseil IA
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-center text-body text-muted-foreground">
                 Chaque outil est choisi pour sa fiabilité en production chez les agences digitales, pas pour la tendance.
@@ -477,7 +479,8 @@ function Index() {
               <Reveal animation="fadeInRight" delay={120}>
                 <div>
                   <h2 className="heading-section">
-                    Je ne vends pas des agents IA. Je vends du temps récupéré et du CA débloqué.
+                    Je ne vends pas des agents IA. Je vends du{" "}
+                    <em className="text-emphasis">temps récupéré</em> et du CA débloqué.
                   </h2>
                   <div className="mt-6 space-y-4 text-body text-muted-foreground">
                     <p>
@@ -508,7 +511,7 @@ function Index() {
                 Voir un agent en action
               </p>
               <h2 className="mt-4 heading-section">
-                Un agent IA qui travaille pendant que vous dormez
+                Un agent IA qui travaille <em className="text-emphasis">pendant que vous dormez</em>
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-body text-muted-foreground">
                 Cette démo montre comment un agent IA qualifie automatiquement une demande entrante
@@ -586,7 +589,7 @@ function Index() {
               <p className="mx-auto w-fit rounded-full border border-foreground/20 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
                 Ma démarche
               </p>
-              <h2 className="mt-4 text-center heading-section">Comment on avance ensemble, consultant IA et agence digitale</h2>
+              <h2 className="mt-4 text-center heading-section">Comment on avance <em className="text-emphasis">ensemble</em>, consultant IA et agence digitale</h2>
             </Reveal>
             <ol className="steps-board mt-14 grid gap-10 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-14">
               {etapes.map((e, i) => (
@@ -640,7 +643,7 @@ function Index() {
         <section className="bg-reassurance-bg px-5 py-20">
           <div className="mx-auto max-w-6xl">
             <Reveal>
-              <h2 className="text-center heading-section">Ce que je vous garantis, concrètement, en tant qu'agence digitale</h2>
+              <h2 className="text-center heading-section">Ce que je vous <em className="text-emphasis">garantis</em>, concrètement, en tant qu'agence digitale</h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {garanties.map((g, i) => (
