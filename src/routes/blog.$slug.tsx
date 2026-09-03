@@ -1,7 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getPostBySlug } from "@/lib/blog.functions";
+import { getPostBySlug, type PublishedPostDetail } from "@/lib/blog.functions";
 import { trackCtaClick } from "@/lib/track";
+
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: async ({ params }) => {
@@ -61,8 +62,9 @@ function formatDate(value: string) {
 }
 
 function BlogPost() {
-  const post = Route.useLoaderData();
-  const paragraphs = post.content.split(/\n{2,}/).filter((p) => p.trim().length > 0);
+  const post: PublishedPostDetail = Route.useLoaderData();
+  const paragraphs = post.content.split(/\n{2,}/).filter((p: string) => p.trim().length > 0);
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -88,7 +90,7 @@ function BlogPost() {
           ) : null}
 
           <div className="mt-8 space-y-5">
-            {paragraphs.map((paragraph, index) => (
+            {paragraphs.map((paragraph: string, index: number) => (
               <p key={index} className="text-body whitespace-pre-line text-foreground/90">
                 {paragraph}
               </p>
