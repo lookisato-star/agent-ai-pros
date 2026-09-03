@@ -59,6 +59,9 @@ export const getPublishedPosts = createServerFn({ method: "GET" }).handler(async
   return data ?? [];
 });
 
+export type PublishedPost = Awaited<ReturnType<typeof getPublishedPosts>>[number];
+
+
 export const getPostBySlug = createServerFn({ method: "GET" })
   .inputValidator((data: { slug: string }) => z.object({ slug: z.string().min(1).max(120) }).parse(data))
   .handler(async ({ data }) => {
@@ -71,6 +74,9 @@ export const getPostBySlug = createServerFn({ method: "GET" })
     if (error) throw new Error(error.message);
     return post ?? null;
   });
+
+export type PublishedPostDetail = NonNullable<Awaited<ReturnType<typeof getPostBySlug>>>;
+
 
 export const getVisibleTestimonials = createServerFn({ method: "GET" }).handler(async () => {
   const { data, error } = await publicClient()
