@@ -238,6 +238,14 @@ const garanties = [
 
 const faq = [
   {
+    q: "Comment un agent IA qualifie-t-il vraiment un lead entrant ?",
+    a: "L'agent capte chaque demande dès son arrivée (formulaire, WhatsApp, pub), l'enrichit automatiquement avec des informations utiles (secteur, taille, contexte), puis lui attribue un score selon vos propres critères. Votre équipe ne reçoit que les leads qui méritent son temps, avec toutes les infos déjà centralisées dans votre CRM.",
+  },
+  {
+    q: "Est-ce que ça remplace mon CRM ou ça se connecte dessus ?",
+    a: "Ça se connecte dessus. L'agent se branche sur votre CRM existant et le synchronise en continu : aucune migration, aucune double saisie, aucun changement d'habitude pour votre équipe. L'objectif est d'enlever du travail, pas de remplacer vos outils.",
+  },
+  {
     q: "Qu'est-ce qu'un consultant IA et que fait-il concrètement ?",
     a: "Un consultant IA accompagne une entreprise pour identifier les tâches répétitives qu'une intelligence artificielle peut prendre en charge, puis implémente des agents opérationnels. Dans mon cas, je travaille exclusivement avec des agences digitales : je cartographie vos process (prospection, reporting, onboarding), je choisis la bonne stack (Zapier, Make, n8n, API OpenAI), et je livre un agent testé sur vos vrais dossiers.",
   },
