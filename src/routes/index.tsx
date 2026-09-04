@@ -97,36 +97,36 @@ function Cta({
 const problemes = [
   {
     icon: "fa-regular fa-clock",
-    title: "On est débordés, mais on n'ose pas prendre plus de clients",
-    text: "Chaque nouveau contrat ajoute des heures non facturables. La croissance devient un risque au lieu d'une opportunité.",
+    title: "On reçoit des leads, mais on les traite à la main",
+    text: "Chaque demande entrante passe par quelqu'un qui doit lire, juger, et décider, pendant que le prospect attend.",
   },
   {
     icon: "fa-regular fa-file-lines",
-    title: "Le reporting est fait à l'arrache en fin de mois",
-    text: "Des exports copiés collés à la main, tard le soir. Le client le sent, et la valeur perçue en pâtit.",
+    title: "On ne sait pas quels leads sont vraiment chauds",
+    text: "Sans scoring clair, tous les leads se ressemblent jusqu'à ce qu'on perde du temps sur les mauvais et rate les bons.",
   },
   {
     icon: "fa-regular fa-user",
-    title: "On recrute, on forme pendant trois mois, et la personne part",
-    text: "Le savoir-faire repart avec elle. Vous recommencez à zéro, avec la même charge et un budget en moins.",
+    title: "Le CRM est à jour quand quelqu'un y pense",
+    text: "Les infos du lead restent dans une boîte mail ou un carnet, jamais vraiment centralisées ni exploitables.",
   },
 ];
 
 const solutions = [
   {
     icon: "fa-solid fa-magnifying-glass-chart",
-    title: "Prospection & qualification de leads",
-    text: "L'agent trie, enrichit et score chaque demande entrante selon vos critères, et transmet uniquement les leads qui méritent votre temps.",
+    title: "Capture & enrichissement",
+    text: "Chaque lead entrant (formulaire, WhatsApp, pub) est capté automatiquement et enrichi avec les infos utiles pour le juger : secteur, taille, contexte, avant même qu'un humain n'y touche.",
   },
   {
     icon: "fa-solid fa-chart-line",
-    title: "Reporting client automatisé",
-    text: "Les données Ads, SEO et CRM sont consolidées, commentées dans votre ton et livrées au client sans intervention manuelle.",
+    title: "Scoring intelligent",
+    text: "L'agent évalue chaque lead selon vos propres critères et lui donne un score. Vous ne recevez que les leads qui méritent réellement votre temps.",
   },
   {
     icon: "fa-solid fa-arrow-right-arrow-left",
-    title: "Onboarding client fluide",
-    text: "Collecte des accès, brief structuré, création des dossiers et relances : le démarrage passe de trois semaines à trois jours.",
+    title: "Routage & CRM sync",
+    text: "Lead chaud : alerte immédiate à l'équipe. Lead tiède : nurturing automatique. Tout est synchronisé dans votre CRM, sans double saisie.",
   },
 ];
 
@@ -155,20 +155,20 @@ const tools = [
 
 const transformation = [
   {
-    avant: ["Qualification", " des leads à la main, une par une"],
-    apres: ["Leads scorés", " automatiquement, seuls les meilleurs arrivent à vous"],
+    avant: ["Qualification des leads", " à la main, une par une"],
+    apres: ["Leads scorés", " automatiquement, en quelques minutes"],
   },
   {
-    avant: ["Reporting", " reconstruit chaque fin de mois dans l'urgence"],
-    apres: ["Rapports", " générés et commentés en continu, prêts à envoyer"],
+    avant: ["Aucun scoring", ", tous les leads se valent jusqu'à preuve du contraire"],
+    apres: ["Seuls les leads qualifiés", " remontent à votre équipe"],
   },
   {
-    avant: ["Onboarding", " dépendant d'une seule personne clé"],
-    apres: ["Process", " documenté et exécuté par l'agent, sans point de rupture"],
+    avant: ["CRM mis à jour", " quand quelqu'un y pense"],
+    apres: ["CRM synchronisé", " en continu, sans saisie manuelle"],
   },
   {
-    avant: ["Croissance", " bloquée par la capacité de l'équipe"],
-    apres: ["Capacité", " élastique : plus de clients, même effectif"],
+    avant: ["Réponse au lead", " en heures, parfois en jours"],
+    apres: ["Première réponse", " envoyée en quelques minutes"],
   },
 ];
 
@@ -211,10 +211,10 @@ const cas = [
   {
     nom: "RMS International Group",
     icon: "fa-solid fa-globe",
-    defi: "Reporting multi-pays reconstruit à la main pour 18 clients, cinq jours par mois.",
+    defi: "Des leads entrants répartis sur plusieurs pays, qualifiés à la main avec un premier retour sous 48 h.",
     solution:
-      "Agent de consolidation Ads et analytics produisant un rapport commenté dans le ton de l'agence.",
-    impact: "Reporting livré en 48 h au lieu de 5 jours, sans embauche supplémentaire.",
+      "Agent de scoring multilingue connecté au CRM, qui enrichit chaque demande et la route vers le bon commercial.",
+    impact: "Première réponse passée de 48 h à quelques minutes, sans embauche supplémentaire.",
   },
 ];
 
@@ -237,6 +237,14 @@ const garanties = [
 ];
 
 const faq = [
+  {
+    q: "Comment un agent IA qualifie-t-il vraiment un lead entrant ?",
+    a: "L'agent capte chaque demande dès son arrivée (formulaire, WhatsApp, pub), l'enrichit automatiquement avec des informations utiles (secteur, taille, contexte), puis lui attribue un score selon vos propres critères. Votre équipe ne reçoit que les leads qui méritent son temps, avec toutes les infos déjà centralisées dans votre CRM.",
+  },
+  {
+    q: "Est-ce que ça remplace mon CRM ou ça se connecte dessus ?",
+    a: "Ça se connecte dessus. L'agent se branche sur votre CRM existant et le synchronise en continu : aucune migration, aucune double saisie, aucun changement d'habitude pour votre équipe. L'objectif est d'enlever du travail, pas de remplacer vos outils.",
+  },
   {
     q: "Qu'est-ce qu'un consultant IA et que fait-il concrètement ?",
     a: "Un consultant IA accompagne une entreprise pour identifier les tâches répétitives qu'une intelligence artificielle peut prendre en charge, puis implémente des agents opérationnels. Dans mon cas, je travaille exclusivement avec des agences digitales : je cartographie vos process (prospection, reporting, onboarding), je choisis la bonne stack (Zapier, Make, n8n, API OpenAI), et je livre un agent testé sur vos vrais dossiers.",
@@ -329,23 +337,23 @@ function Index() {
             <Reveal>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
-                Consultant IA & conseil IA, agents sur mesure pour agences digitales
+                Qualification de leads, agents IA pour agences digitales
               </p>
               <h1
                 className="heading-hero"
                 style={{ textShadow: '0 3px 18px rgba(0,0,0,0.65)' }}
               >
-                Votre agence est débordée, mais recruter n'est pas{" "}
-                <em className="text-emphasis">la réponse</em>.
+                Chaque lead qui dort dans votre boîte mail est une vente qui part{" "}
+                <em className="text-emphasis">chez un concurrent</em>.
               </h1>
               <p
                 className="mx-auto mt-5 max-w-2xl text-subtitle text-primary-foreground"
                 style={{ textShadow: '0 2px 14px rgba(0,0,0,0.65)' }}
               >
-                Vous perdez des heures sur la qualification de leads, le reporting client et
-                l'onboarding, pendant que vos concurrents automatisent déjà. J'implémente des
-                agents IA sur mesure qui prennent en charge ces tâches, pour que votre équipe se
-                concentre sur ce qui fait vraiment grandir l'agence.
+                Un lead qui attend 24h de réponse a déjà commencé à regarder ailleurs.
+                J'implémente, pour les agences digitales, un agent IA qui capte, enrichit et
+                score chaque demande entrante en quelques minutes, pour que votre équipe
+                commerciale ne parle qu'aux leads qui méritent son temps.
               </p>
               <div className="mt-7">
                 <Cta className="cta-btn-light" location="hero" />
@@ -390,7 +398,7 @@ function Index() {
             </div>
             <Reveal>
               <p className="mx-auto mt-12 max-w-2xl text-center text-body text-muted-foreground">
-                Ces problèmes ralentissent votre productivité et vous détournent du plus important : délivrer de la valeur.
+                Ces problèmes ne ralentissent pas que votre process : ils vous coûtent des clients qui allaient déjà chez vous.
               </p>
             </Reveal>
           </div>
@@ -400,15 +408,15 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <h2 className="heading-section text-primary">Le coût de <em className="text-emphasis">l'inaction</em> se paie chaque mois</h2>
+              <h2 className="heading-section text-primary">Le coût de <em className="text-emphasis">l'inaction</em> se compte en clients perdus</h2>
               <p className="mt-6 text-body text-muted-foreground">
-                Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
-                rapport bâclé fragilise une relation client que vous avez mis un an à construire.
+                Un lead qui attend une réponse ne reste pas en attente : il continue à chercher.
+                Pendant que votre équipe rattrape le retard, un concurrent plus réactif a déjà
+                décroché le rendez-vous.
               </p>
               <p className="mt-4 text-body text-muted-foreground">
-                Et tant que vos process vivent dans la tête d'une seule personne, votre agence
-                n'est pas une entreprise : c'est une dépendance. Pendant ce temps, les agences qui
-                ont automatisé livrent plus vite, avec une équipe plus petite.
+                Ce n'est pas une question de qualité de service. C'est une question de vitesse.
+                Et la vitesse, ça s'automatise.
               </p>
               <div className="mt-9">
                 <Cta location="agitation" />
@@ -422,8 +430,8 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-center heading-section">
-                Des agents IA conçus pour votre agence digitale,{" "}
-                <em className="text-emphasis">pas un outil générique</em> de plus
+                Un agent construit autour d'un seul objectif :{" "}
+                <em className="text-emphasis">ne plus jamais perdre un lead</em>
               </h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -529,11 +537,11 @@ function Index() {
                 Voir un agent en action
               </p>
               <h2 className="mt-4 heading-section">
-                Un agent IA qui travaille <em className="text-emphasis">pendant que vous dormez</em>
+                Un agent qui qualifie vos leads <em className="text-emphasis">pendant que vous dormez</em>
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-body text-muted-foreground">
-                Cette démo montre comment un agent IA qualifie automatiquement une demande entrante
-                dans une agence digitale, l'enrichit et la crée dans votre CRM, sans intervention manuelle.
+                Cette démo montre comment un agent capte une demande entrante, l'enrichit, la
+                score et la crée dans le CRM, sans intervention manuelle.
               </p>
             </Reveal>
             <Reveal delay={120}>
@@ -704,7 +712,7 @@ function Index() {
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <p className="text-subtitle text-muted-foreground">
-                Vous avez un process qui mérite d'être automatisé ?
+                Prêt à ne plus jamais perdre un lead ?
               </p>
               <div className="mt-6">
                 <Cta location="offre" />
