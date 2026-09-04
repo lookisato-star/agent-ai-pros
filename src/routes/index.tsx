@@ -537,11 +537,11 @@ function Index() {
                 Voir un agent en action
               </p>
               <h2 className="mt-4 heading-section">
-                Un agent IA qui travaille <em className="text-emphasis">pendant que vous dormez</em>
+                Un agent qui qualifie vos leads <em className="text-emphasis">pendant que vous dormez</em>
               </h2>
               <p className="mx-auto mt-5 max-w-2xl text-body text-muted-foreground">
-                Cette démo montre comment un agent IA qualifie automatiquement une demande entrante
-                dans une agence digitale, l'enrichit et la crée dans votre CRM, sans intervention manuelle.
+                Cette démo montre comment un agent capte une demande entrante, l'enrichit, la
+                score et la crée dans le CRM, sans intervention manuelle.
               </p>
             </Reveal>
             <Reveal delay={120}>
@@ -712,7 +712,7 @@ function Index() {
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <p className="text-subtitle text-muted-foreground">
-                Vous avez un process qui mérite d'être automatisé ?
+                Prêt à ne plus jamais perdre un lead ?
               </p>
               <div className="mt-6">
                 <Cta location="offre" />
