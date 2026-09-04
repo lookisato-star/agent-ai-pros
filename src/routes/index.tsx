@@ -97,36 +97,36 @@ function Cta({
 const problemes = [
   {
     icon: "fa-regular fa-clock",
-    title: "On est débordés, mais on n'ose pas prendre plus de clients",
-    text: "Chaque nouveau contrat ajoute des heures non facturables. La croissance devient un risque au lieu d'une opportunité.",
+    title: "On reçoit des leads, mais on les traite à la main",
+    text: "Chaque demande entrante passe par quelqu'un qui doit lire, juger, et décider, pendant que le prospect attend.",
   },
   {
     icon: "fa-regular fa-file-lines",
-    title: "Le reporting est fait à l'arrache en fin de mois",
-    text: "Des exports copiés collés à la main, tard le soir. Le client le sent, et la valeur perçue en pâtit.",
+    title: "On ne sait pas quels leads sont vraiment chauds",
+    text: "Sans scoring clair, tous les leads se ressemblent jusqu'à ce qu'on perde du temps sur les mauvais et rate les bons.",
   },
   {
     icon: "fa-regular fa-user",
-    title: "On recrute, on forme pendant trois mois, et la personne part",
-    text: "Le savoir-faire repart avec elle. Vous recommencez à zéro, avec la même charge et un budget en moins.",
+    title: "Le CRM est à jour quand quelqu'un y pense",
+    text: "Les infos du lead restent dans une boîte mail ou un carnet, jamais vraiment centralisées ni exploitables.",
   },
 ];
 
 const solutions = [
   {
     icon: "fa-solid fa-magnifying-glass-chart",
-    title: "Prospection & qualification de leads",
-    text: "L'agent trie, enrichit et score chaque demande entrante selon vos critères, et transmet uniquement les leads qui méritent votre temps.",
+    title: "Capture & enrichissement",
+    text: "Chaque lead entrant (formulaire, WhatsApp, pub) est capté automatiquement et enrichi avec les infos utiles pour le juger : secteur, taille, contexte, avant même qu'un humain n'y touche.",
   },
   {
     icon: "fa-solid fa-chart-line",
-    title: "Reporting client automatisé",
-    text: "Les données Ads, SEO et CRM sont consolidées, commentées dans votre ton et livrées au client sans intervention manuelle.",
+    title: "Scoring intelligent",
+    text: "L'agent évalue chaque lead selon vos propres critères et lui donne un score. Vous ne recevez que les leads qui méritent réellement votre temps.",
   },
   {
     icon: "fa-solid fa-arrow-right-arrow-left",
-    title: "Onboarding client fluide",
-    text: "Collecte des accès, brief structuré, création des dossiers et relances : le démarrage passe de trois semaines à trois jours.",
+    title: "Routage & CRM sync",
+    text: "Lead chaud : alerte immédiate à l'équipe. Lead tiède : nurturing automatique. Tout est synchronisé dans votre CRM, sans double saisie.",
   },
 ];
 
@@ -155,20 +155,20 @@ const tools = [
 
 const transformation = [
   {
-    avant: ["Qualification", " des leads à la main, une par une"],
-    apres: ["Leads scorés", " automatiquement, seuls les meilleurs arrivent à vous"],
+    avant: ["Qualification des leads", " à la main, une par une"],
+    apres: ["Leads scorés", " automatiquement, en quelques minutes"],
   },
   {
-    avant: ["Reporting", " reconstruit chaque fin de mois dans l'urgence"],
-    apres: ["Rapports", " générés et commentés en continu, prêts à envoyer"],
+    avant: ["Aucun scoring", ", tous les leads se valent jusqu'à preuve du contraire"],
+    apres: ["Seuls les leads qualifiés", " remontent à votre équipe"],
   },
   {
-    avant: ["Onboarding", " dépendant d'une seule personne clé"],
-    apres: ["Process", " documenté et exécuté par l'agent, sans point de rupture"],
+    avant: ["CRM mis à jour", " quand quelqu'un y pense"],
+    apres: ["CRM synchronisé", " en continu, sans saisie manuelle"],
   },
   {
-    avant: ["Croissance", " bloquée par la capacité de l'équipe"],
-    apres: ["Capacité", " élastique : plus de clients, même effectif"],
+    avant: ["Réponse au lead", " en heures, parfois en jours"],
+    apres: ["Première réponse", " envoyée en quelques minutes"],
   },
 ];
 
@@ -211,10 +211,10 @@ const cas = [
   {
     nom: "RMS International Group",
     icon: "fa-solid fa-globe",
-    defi: "Reporting multi-pays reconstruit à la main pour 18 clients, cinq jours par mois.",
+    defi: "Des leads entrants répartis sur plusieurs pays, qualifiés à la main avec un premier retour sous 48 h.",
     solution:
-      "Agent de consolidation Ads et analytics produisant un rapport commenté dans le ton de l'agence.",
-    impact: "Reporting livré en 48 h au lieu de 5 jours, sans embauche supplémentaire.",
+      "Agent de scoring multilingue connecté au CRM, qui enrichit chaque demande et la route vers le bon commercial.",
+    impact: "Première réponse passée de 48 h à quelques minutes, sans embauche supplémentaire.",
   },
 ];
 
