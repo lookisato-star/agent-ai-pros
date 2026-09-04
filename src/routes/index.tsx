@@ -337,23 +337,23 @@ function Index() {
             <Reveal>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
-                Consultant IA & conseil IA, agents sur mesure pour agences digitales
+                Qualification de leads, agents IA pour agences digitales
               </p>
               <h1
                 className="heading-hero"
                 style={{ textShadow: '0 3px 18px rgba(0,0,0,0.65)' }}
               >
-                Votre agence est débordée, mais recruter n'est pas{" "}
-                <em className="text-emphasis">la réponse</em>.
+                Chaque lead qui dort dans votre boîte mail est une vente qui part{" "}
+                <em className="text-emphasis">chez un concurrent</em>.
               </h1>
               <p
                 className="mx-auto mt-5 max-w-2xl text-subtitle text-primary-foreground"
                 style={{ textShadow: '0 2px 14px rgba(0,0,0,0.65)' }}
               >
-                Vous perdez des heures sur la qualification de leads, le reporting client et
-                l'onboarding, pendant que vos concurrents automatisent déjà. J'implémente des
-                agents IA sur mesure qui prennent en charge ces tâches, pour que votre équipe se
-                concentre sur ce qui fait vraiment grandir l'agence.
+                Un lead qui attend 24h de réponse a déjà commencé à regarder ailleurs.
+                J'implémente, pour les agences digitales, un agent IA qui capte, enrichit et
+                score chaque demande entrante en quelques minutes, pour que votre équipe
+                commerciale ne parle qu'aux leads qui méritent son temps.
               </p>
               <div className="mt-7">
                 <Cta className="cta-btn-light" location="hero" />
@@ -398,7 +398,7 @@ function Index() {
             </div>
             <Reveal>
               <p className="mx-auto mt-12 max-w-2xl text-center text-body text-muted-foreground">
-                Ces problèmes ralentissent votre productivité et vous détournent du plus important : délivrer de la valeur.
+                Ces problèmes ne ralentissent pas que votre process : ils vous coûtent des clients qui allaient déjà chez vous.
               </p>
             </Reveal>
           </div>
@@ -408,15 +408,15 @@ function Index() {
         <section className="bg-secondary-bg px-5 py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <h2 className="heading-section text-primary">Le coût de <em className="text-emphasis">l'inaction</em> se paie chaque mois</h2>
+              <h2 className="heading-section text-primary">Le coût de <em className="text-emphasis">l'inaction</em> se compte en clients perdus</h2>
               <p className="mt-6 text-body text-muted-foreground">
-                Chaque demande traitée trop tard part chez un concurrent plus réactif. Chaque
-                rapport bâclé fragilise une relation client que vous avez mis un an à construire.
+                Un lead qui attend une réponse ne reste pas en attente : il continue à chercher.
+                Pendant que votre équipe rattrape le retard, un concurrent plus réactif a déjà
+                décroché le rendez-vous.
               </p>
               <p className="mt-4 text-body text-muted-foreground">
-                Et tant que vos process vivent dans la tête d'une seule personne, votre agence
-                n'est pas une entreprise : c'est une dépendance. Pendant ce temps, les agences qui
-                ont automatisé livrent plus vite, avec une équipe plus petite.
+                Ce n'est pas une question de qualité de service. C'est une question de vitesse.
+                Et la vitesse, ça s'automatise.
               </p>
               <div className="mt-9">
                 <Cta location="agitation" />
@@ -430,8 +430,8 @@ function Index() {
           <div className="mx-auto max-w-6xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-center heading-section">
-                Des agents IA conçus pour votre agence digitale,{" "}
-                <em className="text-emphasis">pas un outil générique</em> de plus
+                Un agent construit autour d'un seul objectif :{" "}
+                <em className="text-emphasis">ne plus jamais perdre un lead</em>
               </h2>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
