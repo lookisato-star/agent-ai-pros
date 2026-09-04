@@ -220,11 +220,6 @@ const cas = [
 
 const garanties = [
   {
-    icon: "fa-solid fa-ban",
-    title: "Pas d'abonnement forcé",
-    text: "Vous payez le projet, pas un forfait mensuel obligatoire. Si vous voulez de la maintenance ensuite, c'est vous qui décidez.",
-  },
-  {
     icon: "fa-solid fa-key",
     title: "Vous restez propriétaire du système",
     text: "Le workflow, les prompts, les automatisations : tout reste sur votre compte (Make, n8n, ou autre). Aucune dépendance cachée.",
