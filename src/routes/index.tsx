@@ -19,25 +19,25 @@ const floatingIcons = [
   {
     src: iconZapier.url,
     alt: "Zapier",
-    className: "left-[4%] top-[16%] w-14 sm:w-20 md:w-24",
+    className: "left-[2%] top-[8%] w-10 sm:left-[4%] sm:top-[16%] sm:w-20 md:w-24",
     delay: "0s",
   },
   {
     src: iconMake.url,
     alt: "Make",
-    className: "right-[5%] top-[12%] w-16 sm:w-24 md:w-28",
+    className: "right-[2%] top-[6%] w-12 sm:right-[5%] sm:top-[12%] sm:w-24 md:w-28",
     delay: "1.2s",
   },
   {
     src: iconN8n.url,
     alt: "n8n",
-    className: "right-[8%] bottom-[12%] w-12 sm:w-18 md:w-22",
+    className: "right-[2%] bottom-[4%] w-10 sm:right-[8%] sm:bottom-[12%] sm:w-[4.5rem] md:w-22",
     delay: "2.1s",
   },
   {
     src: iconZapier.url,
     alt: "",
-    className: "left-[8%] bottom-[14%] w-11 sm:w-16 md:w-20 opacity-80",
+    className: "left-[2%] bottom-[6%] w-9 opacity-80 sm:left-[8%] sm:bottom-[14%] sm:w-16 md:w-20",
     delay: "0.6s",
   },
 ];
@@ -316,7 +316,7 @@ function Index() {
             className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.35)_0%,_transparent_70%)]"
             aria-hidden="true"
           />
-          <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+          <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
             {floatingIcons.map((icon, i) => (
               <img
                 key={i}
@@ -328,7 +328,7 @@ function Index() {
               />
             ))}
           </div>
-          <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
+          <div className="relative z-10 mx-auto max-w-4xl text-center text-primary-foreground">
             <Reveal>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
