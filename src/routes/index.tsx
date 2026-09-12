@@ -316,7 +316,7 @@ function Index() {
             className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.35)_0%,_transparent_70%)]"
             aria-hidden="true"
           />
-          <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+          <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
             {floatingIcons.map((icon, i) => (
               <img
                 key={i}
@@ -328,7 +328,7 @@ function Index() {
               />
             ))}
           </div>
-          <div className="relative mx-auto max-w-4xl text-center text-primary-foreground">
+          <div className="relative z-10 mx-auto max-w-4xl text-center text-primary-foreground">
             <Reveal>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-black/25 px-4 py-1.5 text-xs font-medium tracking-wide uppercase text-primary-foreground shadow-[0_2px_16px_rgba(0,0,0,0.45)] backdrop-blur">
                 <i className="fa-solid fa-bolt" aria-hidden="true" />
